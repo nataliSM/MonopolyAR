@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E10FE5101FDD42C2004B35DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10FE50F1FDD42C2004B35DA /* ViewController.swift */; };
+		E11498D91FDC00AC00BDBC95 /* lepricon.scn in Resources */ = {isa = PBXBuildFile; fileRef = E11498D81FDC00AC00BDBC95 /* lepricon.scn */; };
+		E160E46A1FDE98DC004481AF /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = E160E4691FDE98DC004481AF /* Position.swift */; };
+		E160E46C1FDE9998004481AF /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = E160E46B1FDE9998004481AF /* Map.swift */; };
+		E167D02A1FDC051B000919AE /* snake-body-shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = E167D0291FDC051B000919AE /* snake-body-shadow.png */; };
+		E167D02C1FDC05D8000919AE /* monopoly_text.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E167D02B1FDC05D8000919AE /* monopoly_text.jpg */; };
+		E167D02E1FDC0615000919AE /* monopolyScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = E167D02D1FDC0615000919AE /* monopolyScene.scn */; };
+		E167D0301FDC074A000919AE /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167D02F1FDC074A000919AE /* GameController.swift */; };
+		E167D0321FDC079C000919AE /* Lepricon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167D0311FDC079C000919AE /* Lepricon.swift */; };
+		E167D0341FDC0F10000919AE /* mushroom-appear.scnp in Resources */ = {isa = PBXBuildFile; fileRef = E167D0331FDC0F10000919AE /* mushroom-appear.scnp */; };
+		E167D0361FDC105C000919AE /* HorizontalPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167D0351FDC105C000919AE /* HorizontalPlane.swift */; };
+		E167D0381FDC1089000919AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E167D0371FDC1089000919AE /* Main.storyboard */; };
+		E167D03C1FDC10F3000919AE /* arscene.scn in Resources */ = {isa = PBXBuildFile; fileRef = E167D03B1FDC10F3000919AE /* arscene.scn */; };
+		E16C7EE61FDFFC6300D278A9 /* Papa_Smurf.scn in Resources */ = {isa = PBXBuildFile; fileRef = E16C7EE41FDFFBC800D278A9 /* Papa_Smurf.scn */; };
+		E16C7EE71FDFFC6800D278A9 /* Papa_Smurf_D.tga in Resources */ = {isa = PBXBuildFile; fileRef = E16C7EE51FDFFBE000D278A9 /* Papa_Smurf_D.tga */; };
+		E1C1666E1FDBFE1A00F70B44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C1666D1FDBFE1A00F70B44 /* AppDelegate.swift */; };
+		E1C166771FDBFE1A00F70B44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C166761FDBFE1A00F70B44 /* Assets.xcassets */; };
+		E1C1667A1FDBFE1A00F70B44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1C166781FDBFE1A00F70B44 /* LaunchScreen.storyboard */; };
+		E1C166851FDBFE1A00F70B44 /* MonopolyARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C166841FDBFE1A00F70B44 /* MonopolyARTests.swift */; };
+		E1C166901FDBFE1A00F70B44 /* MonopolyARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C1668F1FDBFE1A00F70B44 /* MonopolyARUITests.swift */; };
+		E1DD78281FDFED3F00F4ECC7 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD78271FDFED3F00F4ECC7 /* Cat.swift */; };
+		E1E7975C1FDFDB65008A48D4 /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = E1E7975B1FDFDB65008A48D4 /* texture.png */; };
+		E1FB75D81FDFFAA20061BBD9 /* Doraemon.scn in Resources */ = {isa = PBXBuildFile; fileRef = E1E7975A1FDFDB55008A48D4 /* Doraemon.scn */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1C166811FDBFE1A00F70B44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1C166621FDBFE1A00F70B44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1C166691FDBFE1A00F70B44;
+			remoteInfo = MonopolyAR;
+		};
+		E1C1668C1FDBFE1A00F70B44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1C166621FDBFE1A00F70B44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1C166691FDBFE1A00F70B44;
+			remoteInfo = MonopolyAR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E10FE50F1FDD42C2004B35DA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E11498D81FDC00AC00BDBC95 /* lepricon.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = lepricon.scn; sourceTree = "<group>"; };
+		E160E4691FDE98DC004481AF /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		E160E46B1FDE9998004481AF /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		E167D0291FDC051B000919AE /* snake-body-shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snake-body-shadow.png"; sourceTree = "<group>"; };
+		E167D02B1FDC05D8000919AE /* monopoly_text.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = monopoly_text.jpg; sourceTree = "<group>"; };
+		E167D02D1FDC0615000919AE /* monopolyScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = monopolyScene.scn; sourceTree = "<group>"; };
+		E167D02F1FDC074A000919AE /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		E167D0311FDC079C000919AE /* Lepricon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lepricon.swift; sourceTree = "<group>"; };
+		E167D0331FDC0F10000919AE /* mushroom-appear.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = "mushroom-appear.scnp"; sourceTree = "<group>"; };
+		E167D0351FDC105C000919AE /* HorizontalPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPlane.swift; sourceTree = "<group>"; };
+		E167D0371FDC1089000919AE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E167D03B1FDC10F3000919AE /* arscene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = arscene.scn; sourceTree = "<group>"; };
+		E16C7EE41FDFFBC800D278A9 /* Papa_Smurf.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Papa_Smurf.scn; sourceTree = "<group>"; };
+		E16C7EE51FDFFBE000D278A9 /* Papa_Smurf_D.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Papa_Smurf_D.tga; sourceTree = "<group>"; };
+		E1C1666A1FDBFE1A00F70B44 /* MonopolyAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonopolyAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1C1666D1FDBFE1A00F70B44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1C166761FDBFE1A00F70B44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1C166791FDBFE1A00F70B44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1C1667B1FDBFE1A00F70B44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1C166801FDBFE1A00F70B44 /* MonopolyARTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonopolyARTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1C166841FDBFE1A00F70B44 /* MonopolyARTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonopolyARTests.swift; sourceTree = "<group>"; };
+		E1C166861FDBFE1A00F70B44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1C1668B1FDBFE1A00F70B44 /* MonopolyARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonopolyARUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1C1668F1FDBFE1A00F70B44 /* MonopolyARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonopolyARUITests.swift; sourceTree = "<group>"; };
+		E1C166911FDBFE1A00F70B44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1DD78271FDFED3F00F4ECC7 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		E1E7975A1FDFDB55008A48D4 /* Doraemon.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Doraemon.scn; sourceTree = "<group>"; };
+		E1E7975B1FDFDB65008A48D4 /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1C166671FDBFE1A00F70B44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1C1667D1FDBFE1A00F70B44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1C166881FDBFE1A00F70B44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1C166611FDBFE1A00F70B44 = {
+			isa = PBXGroup;
+			children = (
+				E1C1666C1FDBFE1A00F70B44 /* MonopolyAR */,
+				E1C166831FDBFE1A00F70B44 /* MonopolyARTests */,
+				E1C1668E1FDBFE1A00F70B44 /* MonopolyARUITests */,
+				E1C1666B1FDBFE1A00F70B44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1C1666B1FDBFE1A00F70B44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1C1666A1FDBFE1A00F70B44 /* MonopolyAR.app */,
+				E1C166801FDBFE1A00F70B44 /* MonopolyARTests.xctest */,
+				E1C1668B1FDBFE1A00F70B44 /* MonopolyARUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1C1666C1FDBFE1A00F70B44 /* MonopolyAR */ = {
+			isa = PBXGroup;
+			children = (
+				E1C1667B1FDBFE1A00F70B44 /* Info.plist */,
+				E167D03B1FDC10F3000919AE /* arscene.scn */,
+				E167D0371FDC1089000919AE /* Main.storyboard */,
+				E1C1669F1FDBFE6F00F70B44 /* 3DMonopolyAR */,
+				E1C1669E1FDBFE3A00F70B44 /* common scenkit assets */,
+				E1C1669D1FDBFE2C00F70B44 /* common classes */,
+			);
+			path = MonopolyAR;
+			sourceTree = "<group>";
+		};
+		E1C166831FDBFE1A00F70B44 /* MonopolyARTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1C166841FDBFE1A00F70B44 /* MonopolyARTests.swift */,
+				E1C166861FDBFE1A00F70B44 /* Info.plist */,
+			);
+			path = MonopolyARTests;
+			sourceTree = "<group>";
+		};
+		E1C1668E1FDBFE1A00F70B44 /* MonopolyARUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E1C1668F1FDBFE1A00F70B44 /* MonopolyARUITests.swift */,
+				E1C166911FDBFE1A00F70B44 /* Info.plist */,
+			);
+			path = MonopolyARUITests;
+			sourceTree = "<group>";
+		};
+		E1C1669D1FDBFE2C00F70B44 /* common classes */ = {
+			isa = PBXGroup;
+			children = (
+				E167D02F1FDC074A000919AE /* GameController.swift */,
+				E167D0311FDC079C000919AE /* Lepricon.swift */,
+				E160E4691FDE98DC004481AF /* Position.swift */,
+				E160E46B1FDE9998004481AF /* Map.swift */,
+				E1DD78271FDFED3F00F4ECC7 /* Cat.swift */,
+			);
+			path = "common classes";
+			sourceTree = "<group>";
+		};
+		E1C1669E1FDBFE3A00F70B44 /* common scenkit assets */ = {
+			isa = PBXGroup;
+			children = (
+				E167D0331FDC0F10000919AE /* mushroom-appear.scnp */,
+				E1C166761FDBFE1A00F70B44 /* Assets.xcassets */,
+				E167D0291FDC051B000919AE /* snake-body-shadow.png */,
+				E11498D81FDC00AC00BDBC95 /* lepricon.scn */,
+				E167D02B1FDC05D8000919AE /* monopoly_text.jpg */,
+				E167D02D1FDC0615000919AE /* monopolyScene.scn */,
+				E16C7EE51FDFFBE000D278A9 /* Papa_Smurf_D.tga */,
+				E1E7975B1FDFDB65008A48D4 /* texture.png */,
+				E1E7975A1FDFDB55008A48D4 /* Doraemon.scn */,
+				E16C7EE41FDFFBC800D278A9 /* Papa_Smurf.scn */,
+			);
+			path = "common scenkit assets";
+			sourceTree = "<group>";
+		};
+		E1C1669F1FDBFE6F00F70B44 /* 3DMonopolyAR */ = {
+			isa = PBXGroup;
+			children = (
+				E10FE50F1FDD42C2004B35DA /* ViewController.swift */,
+				E1C1666D1FDBFE1A00F70B44 /* AppDelegate.swift */,
+				E1C166781FDBFE1A00F70B44 /* LaunchScreen.storyboard */,
+				E167D0351FDC105C000919AE /* HorizontalPlane.swift */,
+			);
+			path = 3DMonopolyAR;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1C166691FDBFE1A00F70B44 /* MonopolyAR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1C166941FDBFE1B00F70B44 /* Build configuration list for PBXNativeTarget "MonopolyAR" */;
+			buildPhases = (
+				E1C166661FDBFE1A00F70B44 /* Sources */,
+				E1C166671FDBFE1A00F70B44 /* Frameworks */,
+				E1C166681FDBFE1A00F70B44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonopolyAR;
+			productName = MonopolyAR;
+			productReference = E1C1666A1FDBFE1A00F70B44 /* MonopolyAR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1C1667F1FDBFE1A00F70B44 /* MonopolyARTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1C166971FDBFE1B00F70B44 /* Build configuration list for PBXNativeTarget "MonopolyARTests" */;
+			buildPhases = (
+				E1C1667C1FDBFE1A00F70B44 /* Sources */,
+				E1C1667D1FDBFE1A00F70B44 /* Frameworks */,
+				E1C1667E1FDBFE1A00F70B44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1C166821FDBFE1A00F70B44 /* PBXTargetDependency */,
+			);
+			name = MonopolyARTests;
+			productName = MonopolyARTests;
+			productReference = E1C166801FDBFE1A00F70B44 /* MonopolyARTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E1C1668A1FDBFE1A00F70B44 /* MonopolyARUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1C1669A1FDBFE1B00F70B44 /* Build configuration list for PBXNativeTarget "MonopolyARUITests" */;
+			buildPhases = (
+				E1C166871FDBFE1A00F70B44 /* Sources */,
+				E1C166881FDBFE1A00F70B44 /* Frameworks */,
+				E1C166891FDBFE1A00F70B44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1C1668D1FDBFE1A00F70B44 /* PBXTargetDependency */,
+			);
+			name = MonopolyARUITests;
+			productName = MonopolyARUITests;
+			productReference = E1C1668B1FDBFE1A00F70B44 /* MonopolyARUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1C166621FDBFE1A00F70B44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = ru.itis.iosLab;
+				TargetAttributes = {
+					E1C166691FDBFE1A00F70B44 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					E1C1667F1FDBFE1A00F70B44 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E1C166691FDBFE1A00F70B44;
+					};
+					E1C1668A1FDBFE1A00F70B44 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E1C166691FDBFE1A00F70B44;
+					};
+				};
+			};
+			buildConfigurationList = E1C166651FDBFE1A00F70B44 /* Build configuration list for PBXProject "MonopolyAR" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1C166611FDBFE1A00F70B44;
+			productRefGroup = E1C1666B1FDBFE1A00F70B44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1C166691FDBFE1A00F70B44 /* MonopolyAR */,
+				E1C1667F1FDBFE1A00F70B44 /* MonopolyARTests */,
+				E1C1668A1FDBFE1A00F70B44 /* MonopolyARUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1C166681FDBFE1A00F70B44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C1667A1FDBFE1A00F70B44 /* LaunchScreen.storyboard in Resources */,
+				E1C166771FDBFE1A00F70B44 /* Assets.xcassets in Resources */,
+				E16C7EE61FDFFC6300D278A9 /* Papa_Smurf.scn in Resources */,
+				E167D02E1FDC0615000919AE /* monopolyScene.scn in Resources */,
+				E1FB75D81FDFFAA20061BBD9 /* Doraemon.scn in Resources */,
+				E16C7EE71FDFFC6800D278A9 /* Papa_Smurf_D.tga in Resources */,
+				E11498D91FDC00AC00BDBC95 /* lepricon.scn in Resources */,
+				E167D02A1FDC051B000919AE /* snake-body-shadow.png in Resources */,
+				E1E7975C1FDFDB65008A48D4 /* texture.png in Resources */,
+				E167D0381FDC1089000919AE /* Main.storyboard in Resources */,
+				E167D0341FDC0F10000919AE /* mushroom-appear.scnp in Resources */,
+				E167D02C1FDC05D8000919AE /* monopoly_text.jpg in Resources */,
+				E167D03C1FDC10F3000919AE /* arscene.scn in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1C1667E1FDBFE1A00F70B44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1C166891FDBFE1A00F70B44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1C166661FDBFE1A00F70B44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E10FE5101FDD42C2004B35DA /* ViewController.swift in Sources */,
+				E167D0361FDC105C000919AE /* HorizontalPlane.swift in Sources */,
+				E160E46A1FDE98DC004481AF /* Position.swift in Sources */,
+				E160E46C1FDE9998004481AF /* Map.swift in Sources */,
+				E1DD78281FDFED3F00F4ECC7 /* Cat.swift in Sources */,
+				E167D0321FDC079C000919AE /* Lepricon.swift in Sources */,
+				E167D0301FDC074A000919AE /* GameController.swift in Sources */,
+				E1C1666E1FDBFE1A00F70B44 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1C1667C1FDBFE1A00F70B44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C166851FDBFE1A00F70B44 /* MonopolyARTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1C166871FDBFE1A00F70B44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C166901FDBFE1A00F70B44 /* MonopolyARUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1C166821FDBFE1A00F70B44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1C166691FDBFE1A00F70B44 /* MonopolyAR */;
+			targetProxy = E1C166811FDBFE1A00F70B44 /* PBXContainerItemProxy */;
+		};
+		E1C1668D1FDBFE1A00F70B44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1C166691FDBFE1A00F70B44 /* MonopolyAR */;
+			targetProxy = E1C1668C1FDBFE1A00F70B44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1C166781FDBFE1A00F70B44 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1C166791FDBFE1A00F70B44 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1C166921FDBFE1B00F70B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1C166931FDBFE1B00F70B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1C166951FDBFE1B00F70B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 253FZ393HL;
+				INFOPLIST_FILE = MonopolyAR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = natalia.MonopolyAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1C166961FDBFE1B00F70B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 253FZ393HL;
+				INFOPLIST_FILE = MonopolyAR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = natalia.MonopolyAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E1C166981FDBFE1B00F70B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 253FZ393HL;
+				INFOPLIST_FILE = MonopolyARTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = natalia.MonopolyARTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MonopolyAR.app/MonopolyAR";
+			};
+			name = Debug;
+		};
+		E1C166991FDBFE1B00F70B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 253FZ393HL;
+				INFOPLIST_FILE = MonopolyARTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = natalia.MonopolyARTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MonopolyAR.app/MonopolyAR";
+			};
+			name = Release;
+		};
+		E1C1669B1FDBFE1B00F70B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 253FZ393HL;
+				INFOPLIST_FILE = MonopolyARUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = natalia.MonopolyARUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MonopolyAR;
+			};
+			name = Debug;
+		};
+		E1C1669C1FDBFE1B00F70B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 253FZ393HL;
+				INFOPLIST_FILE = MonopolyARUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = natalia.MonopolyARUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MonopolyAR;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1C166651FDBFE1A00F70B44 /* Build configuration list for PBXProject "MonopolyAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1C166921FDBFE1B00F70B44 /* Debug */,
+				E1C166931FDBFE1B00F70B44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1C166941FDBFE1B00F70B44 /* Build configuration list for PBXNativeTarget "MonopolyAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1C166951FDBFE1B00F70B44 /* Debug */,
+				E1C166961FDBFE1B00F70B44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1C166971FDBFE1B00F70B44 /* Build configuration list for PBXNativeTarget "MonopolyARTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1C166981FDBFE1B00F70B44 /* Debug */,
+				E1C166991FDBFE1B00F70B44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1C1669A1FDBFE1B00F70B44 /* Build configuration list for PBXNativeTarget "MonopolyARUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1C1669B1FDBFE1B00F70B44 /* Debug */,
+				E1C1669C1FDBFE1B00F70B44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1C166621FDBFE1A00F70B44 /* Project object */;
+}
