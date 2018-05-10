@@ -111,9 +111,14 @@ class TrainStationSpace: OwnedSpaceProtocol {
     
     func updateOwner(_ newOwner: Player) {
         newOwner.removeMoney(amount: ownershipPolicy.price)
+        node.isHidden = false
+        let playerPlace = node.childNode(withName: "place_players", recursively: false)!
+        playerPlace.isHidden = false
+        let material = playerPlace.geometry!.material(named: "color")!
+        material.diffuse.contents = UIColor.green
+        
         self.owner = newOwner
     }
-    
     
 }
 
@@ -132,6 +137,12 @@ class PropertySpace: OwnedSpaceProtocol {
     
     func updateOwner(_ newOwner: Player) {
         newOwner.removeMoney(amount: ownershipPolicy.price)
+        node.isHidden = false
+        let playerPlace = node.childNode(withName: "place_players", recursively: false)!
+        playerPlace.isHidden = false
+        let material = playerPlace.geometry!.material(named: "color")!
+        material.diffuse.contents = UIColor.green
+        
         self.owner = newOwner
     }
     

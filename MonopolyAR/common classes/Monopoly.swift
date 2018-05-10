@@ -123,12 +123,7 @@ class Monopoly {
     }
     
     private func policy(name: NodeName) -> Policy {
-        switch name {
-        case .property_brown_1: return Policy(pr)
-            
-        default:
-            fatalError("")
-        }
+   
         return Policy(price: 200, tax: 20)
     }
     
