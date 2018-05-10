@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                             </arscnView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kVK-OO-rSI">
-                                <rect key="frame" x="87" y="283" width="200" height="100"/>
+                                <rect key="frame" x="87.5" y="283.5" width="200" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byF-lU-RXw">
                                         <rect key="frame" x="10" y="39" width="180" height="21"/>
@@ -52,14 +52,8 @@
                                     <constraint firstItem="byF-lU-RXw" firstAttribute="centerY" secondItem="kVK-OO-rSI" secondAttribute="centerY" id="lfQ-s7-gqz"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe left or right to turn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFW-gz-2oq">
-                                <rect key="frame" x="10" y="592" width="355" height="21"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBu-dA-5uN">
-                                <rect key="frame" x="238" y="20" width="127" height="40"/>
+                                <rect key="frame" x="243" y="20" width="122" height="30"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Подкинуть кубик">
                                     <color key="titleColor" red="0.067701586787564771" green="0.062377761179845267" blue="0.062958014451313354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -68,42 +62,23 @@
                                     <action selector="throwTheDice:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Jy5-O8-ZHY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hj6-DG-9Dz">
-                                <rect key="frame" x="150" y="25" width="42" height="30"/>
-                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="WlO-L1-b7X"/>
-                                    <constraint firstAttribute="height" constant="30" id="joZ-d4-AwO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="li4-vd-jN9" firstAttribute="trailing" secondItem="cFW-gz-2oq" secondAttribute="trailing" constant="10" id="Bwv-gj-XS4"/>
-                            <constraint firstItem="Hj6-DG-9Dz" firstAttribute="top" secondItem="li4-vd-jN9" secondAttribute="top" constant="5" id="J5P-Lv-yj2"/>
                             <constraint firstItem="li4-vd-jN9" firstAttribute="trailing" secondItem="dBu-dA-5uN" secondAttribute="trailing" constant="10" id="Js3-Fp-prb"/>
                             <constraint firstItem="kVK-OO-rSI" firstAttribute="centerX" secondItem="LRZ-2U-K6A" secondAttribute="centerX" id="KD6-hs-scz"/>
                             <constraint firstItem="92r-jO-D1Q" firstAttribute="trailing" secondItem="li4-vd-jN9" secondAttribute="trailing" id="Nt9-yp-ITJ"/>
-                            <constraint firstItem="Hj6-DG-9Dz" firstAttribute="centerY" secondItem="dBu-dA-5uN" secondAttribute="centerY" id="ZyP-KH-0aH"/>
                             <constraint firstItem="kVK-OO-rSI" firstAttribute="centerY" secondItem="LRZ-2U-K6A" secondAttribute="centerY" id="aB6-Dh-Whb"/>
                             <constraint firstItem="dBu-dA-5uN" firstAttribute="top" secondItem="li4-vd-jN9" secondAttribute="top" id="azh-9o-sAU"/>
-                            <constraint firstItem="dBu-dA-5uN" firstAttribute="leading" secondItem="Hj6-DG-9Dz" secondAttribute="trailing" constant="46" id="eqn-rs-kyY"/>
-                            <constraint firstItem="li4-vd-jN9" firstAttribute="bottom" secondItem="cFW-gz-2oq" secondAttribute="bottom" constant="10" id="ogM-k6-UnO"/>
                             <constraint firstItem="92r-jO-D1Q" firstAttribute="top" secondItem="LRZ-2U-K6A" secondAttribute="top" id="pHA-qC-lCE"/>
                             <constraint firstItem="92r-jO-D1Q" firstAttribute="leading" secondItem="li4-vd-jN9" secondAttribute="leading" id="rbY-97-Fkh"/>
                             <constraint firstItem="92r-jO-D1Q" firstAttribute="bottom" secondItem="li4-vd-jN9" secondAttribute="bottom" id="sdU-T8-6bB"/>
-                            <constraint firstItem="Hj6-DG-9Dz" firstAttribute="leading" secondItem="li4-vd-jN9" secondAttribute="leading" constant="150" id="sf5-nP-z84"/>
-                            <constraint firstItem="cFW-gz-2oq" firstAttribute="leading" secondItem="li4-vd-jN9" secondAttribute="leading" constant="10" id="v62-fz-hdO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="li4-vd-jN9"/>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="diceCount" destination="Hj6-DG-9Dz" id="t5A-ky-UrW"/>
                         <outlet property="hintLabel" destination="byF-lU-RXw" id="WNf-2b-UNV"/>
                         <outlet property="hintView" destination="kVK-OO-rSI" id="mNE-KR-Jao"/>
                         <outlet property="sceneView" destination="92r-jO-D1Q" id="OJL-mL-89q"/>

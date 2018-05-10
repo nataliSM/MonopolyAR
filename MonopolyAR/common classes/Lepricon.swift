@@ -8,16 +8,16 @@
 
 import SceneKit
 
-
-
-final class Lepricon: SCNNode {
-    var lepriconNode: SCNNode?
-    
+final class Lepricon: SCNNode, PlayerObject {
+    var node: SCNNode
+    var moneyLabel: SCNNode
     override init() {
+        let scene = SCNScene(named: "lepricon.scn")!
+        let node = scene.rootNode.childNode(withName: "lepricon", recursively: true)!
+        self.moneyLabel = node.childNode(withName: "money", recursively: false)!
+        self.node = node
         super.init()
-        if let scene = SCNScene(named: "lepricon.scn"), let lepriconNode = scene.rootNode.childNode(withName: "lepricon", recursively: true) {
-            addChildNode(lepriconNode)
-        }
+        addChildNode(node)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -25,19 +25,19 @@ final class Lepricon: SCNNode {
     }
 
 
-    func runAppearAnimation() {
-        lepriconNode?.position.y = -1
-        removeAllActions()
-        removeAllParticleSystems()
-        scale = SCNVector3(0.1, 0.1, 0.1)
-        addParticleSystem(SCNParticleSystem(named: "mushroom-appear", inDirectory: nil)!)
-        let scaleAction = SCNAction.scale(to: 1.0, duration: 1.0)
-        let removeParticle = SCNAction.run { _ in
-            self.removeAllParticleSystems()
-        }
-        let sequence = SCNAction.sequence([scaleAction, removeParticle])
-        runAction(sequence)
-    }
+//    func runAppearAnimation() {
+//        lepriconNode?.position.y = -1
+//        removeAllActions()
+//        removeAllParticleSystems()
+//        scale = SCNVector3(0.1, 0.1, 0.1)
+//        addParticleSystem(SCNParticleSystem(named: "mushroom-appear", inDirectory: nil)!)
+//        let scaleAction = SCNAction.scale(to: 1.0, duration: 1.0)
+//        let removeParticle = SCNAction.run { _ in
+//            self.removeAllParticleSystems()
+//        }
+//        let sequence = SCNAction.sequence([scaleAction, removeParticle])
+//        runAction(sequence)
+//    }
   
 
 

@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050D1525209FB17D008D1E8B /* blank-monopoly-board-template.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 050D1524209FB17D008D1E8B /* blank-monopoly-board-template.jpg */; };
+		050D1531209FBE0D008D1E8B /* Chest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050D1530209FBE0D008D1E8B /* Chest.swift */; };
+		050D153B209FD14B008D1E8B /* monopoly.dae in Resources */ = {isa = PBXBuildFile; fileRef = 050D153A209FD14B008D1E8B /* monopoly.dae */; };
+		050D154220A038F7008D1E8B /* objects.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 050D154120A038F6008D1E8B /* objects.scnassets */; };
+		055BE46B20A0EBE2006DE246 /* Monopoly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055BE46A20A0EBE2006DE246 /* Monopoly.swift */; };
+		055BE46F20A0EF4B006DE246 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055BE46E20A0EF4B006DE246 /* Space.swift */; };
+		055BE47320A0F240006DE246 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055BE47220A0F240006DE246 /* Player.swift */; };
+		055BE47520A0F2D3006DE246 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055BE47420A0F2D3006DE246 /* Card.swift */; };
+		055BE47B20A1C272006DE246 /* NodeName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055BE47A20A1C272006DE246 /* NodeName.swift */; };
+		058EDD8820A390AF0064ACB4 /* PullUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058EDD8720A390AE0064ACB4 /* PullUpController.swift */; };
 		E10FE5101FDD42C2004B35DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10FE50F1FDD42C2004B35DA /* ViewController.swift */; };
 		E11498D91FDC00AC00BDBC95 /* lepricon.scn in Resources */ = {isa = PBXBuildFile; fileRef = E11498D81FDC00AC00BDBC95 /* lepricon.scn */; };
 		E160E46A1FDE98DC004481AF /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = E160E4691FDE98DC004481AF /* Position.swift */; };
 		E160E46C1FDE9998004481AF /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = E160E46B1FDE9998004481AF /* Map.swift */; };
 		E167D02A1FDC051B000919AE /* snake-body-shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = E167D0291FDC051B000919AE /* snake-body-shadow.png */; };
 		E167D02C1FDC05D8000919AE /* monopoly_text.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E167D02B1FDC05D8000919AE /* monopoly_text.jpg */; };
-		E167D02E1FDC0615000919AE /* monopolyScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = E167D02D1FDC0615000919AE /* monopolyScene.scn */; };
+		E167D02E1FDC0615000919AE /* monopoly.scn in Resources */ = {isa = PBXBuildFile; fileRef = E167D02D1FDC0615000919AE /* monopoly.scn */; };
 		E167D0301FDC074A000919AE /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167D02F1FDC074A000919AE /* GameController.swift */; };
 		E167D0321FDC079C000919AE /* Lepricon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167D0311FDC079C000919AE /* Lepricon.swift */; };
 		E167D0341FDC0F10000919AE /* mushroom-appear.scnp in Resources */ = {isa = PBXBuildFile; fileRef = E167D0331FDC0F10000919AE /* mushroom-appear.scnp */; };
@@ -27,7 +37,7 @@
 		E1C1667A1FDBFE1A00F70B44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1C166781FDBFE1A00F70B44 /* LaunchScreen.storyboard */; };
 		E1C166851FDBFE1A00F70B44 /* MonopolyARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C166841FDBFE1A00F70B44 /* MonopolyARTests.swift */; };
 		E1C166901FDBFE1A00F70B44 /* MonopolyARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C1668F1FDBFE1A00F70B44 /* MonopolyARUITests.swift */; };
-		E1DD78281FDFED3F00F4ECC7 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD78271FDFED3F00F4ECC7 /* Cat.swift */; };
+		E1DD78281FDFED3F00F4ECC7 /* Smurf.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD78271FDFED3F00F4ECC7 /* Smurf.swift */; };
 		E1E7975C1FDFDB65008A48D4 /* texture.png in Resources */ = {isa = PBXBuildFile; fileRef = E1E7975B1FDFDB65008A48D4 /* texture.png */; };
 		E1FB75D81FDFFAA20061BBD9 /* Doraemon.scn in Resources */ = {isa = PBXBuildFile; fileRef = E1E7975A1FDFDB55008A48D4 /* Doraemon.scn */; };
 /* End PBXBuildFile section */
@@ -50,13 +60,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		050D1524209FB17D008D1E8B /* blank-monopoly-board-template.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "blank-monopoly-board-template.jpg"; sourceTree = "<group>"; };
+		050D1530209FBE0D008D1E8B /* Chest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chest.swift; sourceTree = "<group>"; };
+		050D153A209FD14B008D1E8B /* monopoly.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = monopoly.dae; sourceTree = "<group>"; };
+		050D154120A038F6008D1E8B /* objects.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = objects.scnassets; sourceTree = "<group>"; };
+		050D154320A0392E008D1E8B /* dice.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = dice.scn; sourceTree = "<group>"; };
+		055BE46A20A0EBE2006DE246 /* Monopoly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monopoly.swift; sourceTree = "<group>"; };
+		055BE46E20A0EF4B006DE246 /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
+		055BE47220A0F240006DE246 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		055BE47420A0F2D3006DE246 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		055BE47A20A1C272006DE246 /* NodeName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeName.swift; sourceTree = "<group>"; };
+		058EDD8720A390AE0064ACB4 /* PullUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullUpController.swift; sourceTree = "<group>"; };
 		E10FE50F1FDD42C2004B35DA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E11498D81FDC00AC00BDBC95 /* lepricon.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = lepricon.scn; sourceTree = "<group>"; };
 		E160E4691FDE98DC004481AF /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		E160E46B1FDE9998004481AF /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		E167D0291FDC051B000919AE /* snake-body-shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snake-body-shadow.png"; sourceTree = "<group>"; };
 		E167D02B1FDC05D8000919AE /* monopoly_text.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = monopoly_text.jpg; sourceTree = "<group>"; };
-		E167D02D1FDC0615000919AE /* monopolyScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = monopolyScene.scn; sourceTree = "<group>"; };
+		E167D02D1FDC0615000919AE /* monopoly.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = monopoly.scn; sourceTree = "<group>"; };
 		E167D02F1FDC074A000919AE /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		E167D0311FDC079C000919AE /* Lepricon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lepricon.swift; sourceTree = "<group>"; };
 		E167D0331FDC0F10000919AE /* mushroom-appear.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = "mushroom-appear.scnp"; sourceTree = "<group>"; };
@@ -76,7 +97,7 @@
 		E1C1668B1FDBFE1A00F70B44 /* MonopolyARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonopolyARUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C1668F1FDBFE1A00F70B44 /* MonopolyARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonopolyARUITests.swift; sourceTree = "<group>"; };
 		E1C166911FDBFE1A00F70B44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1DD78271FDFED3F00F4ECC7 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		E1DD78271FDFED3F00F4ECC7 /* Smurf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smurf.swift; sourceTree = "<group>"; };
 		E1E7975A1FDFDB55008A48D4 /* Doraemon.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Doraemon.scn; sourceTree = "<group>"; };
 		E1E7975B1FDFDB65008A48D4 /* texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,7 +185,13 @@
 				E167D0311FDC079C000919AE /* Lepricon.swift */,
 				E160E4691FDE98DC004481AF /* Position.swift */,
 				E160E46B1FDE9998004481AF /* Map.swift */,
-				E1DD78271FDFED3F00F4ECC7 /* Cat.swift */,
+				E1DD78271FDFED3F00F4ECC7 /* Smurf.swift */,
+				050D1530209FBE0D008D1E8B /* Chest.swift */,
+				055BE46A20A0EBE2006DE246 /* Monopoly.swift */,
+				055BE46E20A0EF4B006DE246 /* Space.swift */,
+				055BE47220A0F240006DE246 /* Player.swift */,
+				055BE47420A0F2D3006DE246 /* Card.swift */,
+				055BE47A20A1C272006DE246 /* NodeName.swift */,
 			);
 			path = "common classes";
 			sourceTree = "<group>";
@@ -172,16 +199,20 @@
 		E1C1669E1FDBFE3A00F70B44 /* common scenkit assets */ = {
 			isa = PBXGroup;
 			children = (
+				050D1524209FB17D008D1E8B /* blank-monopoly-board-template.jpg */,
 				E167D0331FDC0F10000919AE /* mushroom-appear.scnp */,
+				050D153A209FD14B008D1E8B /* monopoly.dae */,
 				E1C166761FDBFE1A00F70B44 /* Assets.xcassets */,
 				E167D0291FDC051B000919AE /* snake-body-shadow.png */,
 				E11498D81FDC00AC00BDBC95 /* lepricon.scn */,
 				E167D02B1FDC05D8000919AE /* monopoly_text.jpg */,
-				E167D02D1FDC0615000919AE /* monopolyScene.scn */,
+				E167D02D1FDC0615000919AE /* monopoly.scn */,
 				E16C7EE51FDFFBE000D278A9 /* Papa_Smurf_D.tga */,
 				E1E7975B1FDFDB65008A48D4 /* texture.png */,
 				E1E7975A1FDFDB55008A48D4 /* Doraemon.scn */,
 				E16C7EE41FDFFBC800D278A9 /* Papa_Smurf.scn */,
+				050D154320A0392E008D1E8B /* dice.scn */,
+				050D154120A038F6008D1E8B /* objects.scnassets */,
 			);
 			path = "common scenkit assets";
 			sourceTree = "<group>";
@@ -189,6 +220,7 @@
 		E1C1669F1FDBFE6F00F70B44 /* 3DMonopolyAR */ = {
 			isa = PBXGroup;
 			children = (
+				058EDD8720A390AE0064ACB4 /* PullUpController.swift */,
 				E10FE50F1FDD42C2004B35DA /* ViewController.swift */,
 				E1C1666D1FDBFE1A00F70B44 /* AppDelegate.swift */,
 				E1C166781FDBFE1A00F70B44 /* LaunchScreen.storyboard */,
@@ -304,15 +336,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				050D153B209FD14B008D1E8B /* monopoly.dae in Resources */,
 				E1C1667A1FDBFE1A00F70B44 /* LaunchScreen.storyboard in Resources */,
 				E1C166771FDBFE1A00F70B44 /* Assets.xcassets in Resources */,
 				E16C7EE61FDFFC6300D278A9 /* Papa_Smurf.scn in Resources */,
-				E167D02E1FDC0615000919AE /* monopolyScene.scn in Resources */,
+				E167D02E1FDC0615000919AE /* monopoly.scn in Resources */,
 				E1FB75D81FDFFAA20061BBD9 /* Doraemon.scn in Resources */,
 				E16C7EE71FDFFC6800D278A9 /* Papa_Smurf_D.tga in Resources */,
 				E11498D91FDC00AC00BDBC95 /* lepricon.scn in Resources */,
 				E167D02A1FDC051B000919AE /* snake-body-shadow.png in Resources */,
 				E1E7975C1FDFDB65008A48D4 /* texture.png in Resources */,
+				050D154220A038F7008D1E8B /* objects.scnassets in Resources */,
+				050D1525209FB17D008D1E8B /* blank-monopoly-board-template.jpg in Resources */,
 				E167D0381FDC1089000919AE /* Main.storyboard in Resources */,
 				E167D0341FDC0F10000919AE /* mushroom-appear.scnp in Resources */,
 				E167D02C1FDC05D8000919AE /* monopoly_text.jpg in Resources */,
@@ -341,13 +376,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				050D1531209FBE0D008D1E8B /* Chest.swift in Sources */,
+				055BE46F20A0EF4B006DE246 /* Space.swift in Sources */,
 				E10FE5101FDD42C2004B35DA /* ViewController.swift in Sources */,
 				E167D0361FDC105C000919AE /* HorizontalPlane.swift in Sources */,
+				055BE47320A0F240006DE246 /* Player.swift in Sources */,
 				E160E46A1FDE98DC004481AF /* Position.swift in Sources */,
 				E160E46C1FDE9998004481AF /* Map.swift in Sources */,
-				E1DD78281FDFED3F00F4ECC7 /* Cat.swift in Sources */,
+				055BE47520A0F2D3006DE246 /* Card.swift in Sources */,
+				055BE47B20A1C272006DE246 /* NodeName.swift in Sources */,
+				055BE46B20A0EBE2006DE246 /* Monopoly.swift in Sources */,
+				E1DD78281FDFED3F00F4ECC7 /* Smurf.swift in Sources */,
 				E167D0321FDC079C000919AE /* Lepricon.swift in Sources */,
 				E167D0301FDC074A000919AE /* GameController.swift in Sources */,
+				058EDD8820A390AF0064ACB4 /* PullUpController.swift in Sources */,
 				E1C1666E1FDBFE1A00F70B44 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,10 +549,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 253FZ393HL;
+				DEVELOPMENT_TEAM = 9NKJX4A57H;
 				INFOPLIST_FILE = MonopolyAR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = natalia.MonopolyAR;
+				PRODUCT_BUNDLE_IDENTIFIER = acacuce.ru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -522,10 +565,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 253FZ393HL;
+				DEVELOPMENT_TEAM = 9NKJX4A57H;
 				INFOPLIST_FILE = MonopolyAR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = natalia.MonopolyAR;
+				PRODUCT_BUNDLE_IDENTIFIER = acacuce.ru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

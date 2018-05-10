@@ -17,6 +17,9 @@ struct Map {
         if step > stepsToStart {
             endPosition = step - stepsToStart
         }
+        if currentPosition + step > 39 {
+            return positions[0]
+        }
         return positions[endPosition]
     }
     init() {
