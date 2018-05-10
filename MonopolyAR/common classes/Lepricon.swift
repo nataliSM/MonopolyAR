@@ -11,6 +11,7 @@ import SceneKit
 final class Lepricon: SCNNode, PlayerObject {
     var node: SCNNode
     var moneyLabel: SCNNode
+    var color: UIColor = UIColor.init(red: 0 / 255.0, green: 144 / 255.0, blue: 81 / 255.0, alpha: 1.0)
     override init() {
         let scene = SCNScene(named: "lepricon.scn")!
         let node = scene.rootNode.childNode(withName: "lepricon", recursively: true)!

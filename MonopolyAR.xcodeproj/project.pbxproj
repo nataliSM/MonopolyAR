@@ -11,6 +11,10 @@
 		050D1531209FBE0D008D1E8B /* Chest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050D1530209FBE0D008D1E8B /* Chest.swift */; };
 		050D153B209FD14B008D1E8B /* monopoly.dae in Resources */ = {isa = PBXBuildFile; fileRef = 050D153A209FD14B008D1E8B /* monopoly.dae */; };
 		050D154220A038F7008D1E8B /* objects.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 050D154120A038F6008D1E8B /* objects.scnassets */; };
+		0522C87620A4FE7700F5F7E9 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522C87520A4FE7700F5F7E9 /* Question.swift */; };
+		0522C87820A501F000F5F7E9 /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522C87720A501F000F5F7E9 /* Train.swift */; };
+		0522C87A20A5043300F5F7E9 /* Translucent_Glass_Gold.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0522C87920A5043200F5F7E9 /* Translucent_Glass_Gold.jpg */; };
+		0522C87C20A5047000F5F7E9 /* Lamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522C87B20A5047000F5F7E9 /* Lamp.swift */; };
 		055BE46B20A0EBE2006DE246 /* Monopoly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055BE46A20A0EBE2006DE246 /* Monopoly.swift */; };
 		055BE46F20A0EF4B006DE246 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055BE46E20A0EF4B006DE246 /* Space.swift */; };
 		055BE47320A0F240006DE246 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055BE47220A0F240006DE246 /* Player.swift */; };
@@ -65,6 +69,10 @@
 		050D153A209FD14B008D1E8B /* monopoly.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = monopoly.dae; sourceTree = "<group>"; };
 		050D154120A038F6008D1E8B /* objects.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = objects.scnassets; sourceTree = "<group>"; };
 		050D154320A0392E008D1E8B /* dice.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = dice.scn; sourceTree = "<group>"; };
+		0522C87520A4FE7700F5F7E9 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		0522C87720A501F000F5F7E9 /* Train.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
+		0522C87920A5043200F5F7E9 /* Translucent_Glass_Gold.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Translucent_Glass_Gold.jpg; sourceTree = "<group>"; };
+		0522C87B20A5047000F5F7E9 /* Lamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lamp.swift; sourceTree = "<group>"; };
 		055BE46A20A0EBE2006DE246 /* Monopoly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monopoly.swift; sourceTree = "<group>"; };
 		055BE46E20A0EF4B006DE246 /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
 		055BE47220A0F240006DE246 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -192,6 +200,9 @@
 				055BE47220A0F240006DE246 /* Player.swift */,
 				055BE47420A0F2D3006DE246 /* Card.swift */,
 				055BE47A20A1C272006DE246 /* NodeName.swift */,
+				0522C87520A4FE7700F5F7E9 /* Question.swift */,
+				0522C87720A501F000F5F7E9 /* Train.swift */,
+				0522C87B20A5047000F5F7E9 /* Lamp.swift */,
 			);
 			path = "common classes";
 			sourceTree = "<group>";
@@ -206,6 +217,7 @@
 				E167D0291FDC051B000919AE /* snake-body-shadow.png */,
 				E11498D81FDC00AC00BDBC95 /* lepricon.scn */,
 				E167D02B1FDC05D8000919AE /* monopoly_text.jpg */,
+				0522C87920A5043200F5F7E9 /* Translucent_Glass_Gold.jpg */,
 				E167D02D1FDC0615000919AE /* monopoly.scn */,
 				E16C7EE51FDFFBE000D278A9 /* Papa_Smurf_D.tga */,
 				E1E7975B1FDFDB65008A48D4 /* texture.png */,
@@ -352,6 +364,7 @@
 				E167D0341FDC0F10000919AE /* mushroom-appear.scnp in Resources */,
 				E167D02C1FDC05D8000919AE /* monopoly_text.jpg in Resources */,
 				E167D03C1FDC10F3000919AE /* arscene.scn in Resources */,
+				0522C87A20A5043300F5F7E9 /* Translucent_Glass_Gold.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,12 +390,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				050D1531209FBE0D008D1E8B /* Chest.swift in Sources */,
+				0522C87620A4FE7700F5F7E9 /* Question.swift in Sources */,
 				055BE46F20A0EF4B006DE246 /* Space.swift in Sources */,
 				E10FE5101FDD42C2004B35DA /* ViewController.swift in Sources */,
 				E167D0361FDC105C000919AE /* HorizontalPlane.swift in Sources */,
+				0522C87C20A5047000F5F7E9 /* Lamp.swift in Sources */,
 				055BE47320A0F240006DE246 /* Player.swift in Sources */,
 				E160E46A1FDE98DC004481AF /* Position.swift in Sources */,
 				E160E46C1FDE9998004481AF /* Map.swift in Sources */,
+				0522C87820A501F000F5F7E9 /* Train.swift in Sources */,
 				055BE47520A0F2D3006DE246 /* Card.swift in Sources */,
 				055BE47B20A1C272006DE246 /* NodeName.swift in Sources */,
 				055BE46B20A0EBE2006DE246 /* Monopoly.swift in Sources */,

@@ -36,7 +36,7 @@ class Monopoly {
     
     func buildMap() -> [SpaceProtocol] {
         let map: [SpaceProtocol] = [
-            actionSpace(name: .space_start, action: .start(price: endRound)),
+            actionSpace(name: .space_start, action: .start),
             propertySpace(name: .property_brown_1),
             actionSpace(name: .space_cmn_chest_1, action: .communityChest),
             propertySpace(name: .property_brown_2),
@@ -89,23 +89,50 @@ class Monopoly {
             let rotateAction = SCNAction.rotate(by: CGFloat.pi * 2, around: SCNVector3(0, 0, 1), duration: 10.0)
             chest.node.runAction(SCNAction.repeatForever(rotateAction))
             chest.node.worldPosition = placeIcon.worldPosition
-            print(chest.node.worldPosition)
-            print(chest.node.position)
         }
+        
+        if case .chance = action {
+            let placeIcon = node.childNode(withName: "place_icon", recursively: true)!
+            let chest = Question()
+            mapNode.addChildNode(chest.node)
+            let rotateAction = SCNAction.rotate(by: CGFloat.pi * 2, around: SCNVector3(0, 0, 1), duration: 10.0)
+            chest.node.runAction(SCNAction.repeatForever(rotateAction))
+            chest.node.worldPosition = placeIcon.worldPosition
+        }
+        
         return ActionSpace(nodeName: name, node: node, action: action)
     }
     
     private func trainStationSpace(name: NodeName) -> TrainStationSpace {
-        let space = TrainStationSpace(ownershipPolicy: policy(name: name), node: node(name: name), nodeName: name)
+        let node = self.node(name: name)
+       
+        let placeIcon = node.childNode(withName: "place_icon", recursively: true)!
+        let train = Train()
+        mapNode.addChildNode(train.node)
+        let rotateAction = SCNAction.rotate(by: CGFloat.pi * 2, around: SCNVector3(0, 0, 1), duration: 10.0)
+        train.node.runAction(SCNAction.repeatForever(rotateAction))
+        train.node.worldPosition = placeIcon.worldPosition
+
+        let space = TrainStationSpace(ownershipPolicy: policy(name: name), node: node, nodeName: name)
         space.stepOnEmty = { [weak self] place, player in 
             self?.delegate?.playerDidStepOnOwnedSpace(player, ownedSpace: place)
         }
-        
         return space
     }
     
     private func comunalSpace(name: NodeName) -> ComunalSpace {
-        let space = ComunalSpace(ownershipPolicy: policy(name: name), node: node(name: name), nodeName: name)
+        let node = self.node(name: name)
+        
+        let placeIcon = node.childNode(withName: "place_icon", recursively: true)!
+        if case .owned_space_electricity = name {
+            let lamp = Lamp()
+            mapNode.addChildNode(lamp.node)
+            let rotateAction = SCNAction.rotate(by: CGFloat.pi * 2, around: SCNVector3(0, 0, 1), duration: 10.0)
+            lamp.node.runAction(SCNAction.repeatForever(rotateAction))
+            lamp.node.worldPosition = placeIcon.worldPosition
+        }
+        
+        let space = ComunalSpace(ownershipPolicy: policy(name: name), node: node, nodeName: name)
         space.stepOnEmty = { [weak self] place, player in 
             self?.delegate?.playerDidStepOnOwnedSpace(player, ownedSpace: place)
         }
@@ -209,7 +236,8 @@ class Monopoly {
         var newIndex = index + result.die1 + result.die2
         
         if newIndex >= map.count {
-           newIndex = newIndex - map.count 
+            activePlayer.addMoney(amount: endRound)
+            newIndex = newIndex - map.count 
         }
         let newSpace = map[newIndex]
         activePlayer.currentSpace = newSpace

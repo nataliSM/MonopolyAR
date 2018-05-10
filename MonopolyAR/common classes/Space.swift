@@ -28,7 +28,7 @@ class ActionSpace: SpaceProtocol {
         case communityChest
         case chance
         case toJail
-        case start(price: Double)
+        case start
         case none
     }
     var nodeName: NodeName
@@ -43,7 +43,6 @@ class ActionSpace: SpaceProtocol {
     func whenPlayerOnSpace(_ player: Player) {
         switch action {
         case .tax(let price): player.removeMoney(amount: price)
-        case .start(let price):  player.removeMoney(amount: price)
         default: return
         }
     }
@@ -59,7 +58,9 @@ protocol OwnedSpaceProtocol: SpaceProtocol {
 extension OwnedSpaceProtocol {
     func whenPlayerOnSpace(_ player: Player) {
         guard let owner = owner else {
-            stepOnEmty?(self, player)
+            if player.funds >= ownershipPolicy.price {
+                stepOnEmty?(self, player)
+            }
             return
         }
         if player != owner {
@@ -88,8 +89,10 @@ class ComunalSpace: OwnedSpaceProtocol {
         node.isHidden = false
         let playerPlace = node.childNode(withName: "place_players", recursively: false)!
         playerPlace.isHidden = false
-        let material = playerPlace.geometry!.material(named: "color")!
-        material.diffuse.contents = UIColor.green
+        let material = playerPlace.geometry!.material(named: "color")!.copy() as! SCNMaterial
+        material.diffuse.contents = newOwner.object.color
+        playerPlace.geometry!.materials[0] = material
+        
         
         self.owner = newOwner
     }
@@ -114,8 +117,9 @@ class TrainStationSpace: OwnedSpaceProtocol {
         node.isHidden = false
         let playerPlace = node.childNode(withName: "place_players", recursively: false)!
         playerPlace.isHidden = false
-        let material = playerPlace.geometry!.material(named: "color")!
-        material.diffuse.contents = UIColor.green
+        let material = playerPlace.geometry!.material(named: "color")!.copy() as! SCNMaterial
+        material.diffuse.contents = newOwner.object.color
+        playerPlace.geometry!.materials[0] = material
         
         self.owner = newOwner
     }
@@ -140,8 +144,9 @@ class PropertySpace: OwnedSpaceProtocol {
         node.isHidden = false
         let playerPlace = node.childNode(withName: "place_players", recursively: false)!
         playerPlace.isHidden = false
-        let material = playerPlace.geometry!.material(named: "color")!
-        material.diffuse.contents = UIColor.green
+        let material = playerPlace.geometry!.material(named: "color")!.copy() as! SCNMaterial
+        material.diffuse.contents = newOwner.object.color
+        playerPlace.geometry!.materials[0] = material
         
         self.owner = newOwner
     }

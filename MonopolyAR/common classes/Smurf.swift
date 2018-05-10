@@ -11,6 +11,7 @@ import SceneKit
 protocol PlayerObject {
     var node: SCNNode { get }
     var moneyLabel: SCNNode { get }
+    var color: UIColor { get }
     func updateMoney(with founds: Double)
 }
 
@@ -29,6 +30,7 @@ extension PlayerObject {
 final class Smurf: SCNNode, PlayerObject {
     var node: SCNNode
     var moneyLabel: SCNNode
+    var color: UIColor = UIColor.init(red: 60 / 255.0, green: 151 / 255.0, blue: 219 / 255.0, alpha: 1.0)
     override init() {
         let scene = SCNScene(named: "Papa_Smurf.scn")!
         let node = scene.rootNode.childNode(withName: "papaSmurf", recursively: true)!
