@@ -36,11 +36,11 @@ class Monopoly {
     
     func buildMap() -> [SpaceProtocol] {
         let map: [SpaceProtocol] = [
-            actionSpace(name: .space_start, action: .start),
+            actionSpace(name: .space_start, action: .start(price: endRound)),
             propertySpace(name: .property_brown_1),
             actionSpace(name: .space_cmn_chest_1, action: .communityChest),
             propertySpace(name: .property_brown_2),
-            actionSpace(name: .space_income_tax_1, action: .tax),
+            actionSpace(name: .space_income_tax_1, action: .tax(price: incomeTax)),
             trainStationSpace(name: .owned_space_reading_railroad),
             propertySpace(name: .property_light_blue_1),
             actionSpace(name: .space_chance_1, action: .chance),
@@ -74,7 +74,7 @@ class Monopoly {
             trainStationSpace(name: .owned_space_short_line),
             actionSpace(name: .space_chnce_3, action: .chance),
             propertySpace(name: .property_blue_1),
-            actionSpace(name: .space_luxary_tax, action: .tax),
+            actionSpace(name: .space_luxary_tax, action: .tax(price: luxaryTax)),
             propertySpace(name: .property_blue_2)
         ]
         return map
@@ -85,7 +85,6 @@ class Monopoly {
         if case .communityChest = action {
             let placeIcon = node.childNode(withName: "place_icon", recursively: true)!
             let chest = Chest()
-      
             mapNode.addChildNode(chest.node)
             let rotateAction = SCNAction.rotate(by: CGFloat.pi * 2, around: SCNVector3(0, 0, 1), duration: 10.0)
             chest.node.runAction(SCNAction.repeatForever(rotateAction))
@@ -124,6 +123,12 @@ class Monopoly {
     }
     
     private func policy(name: NodeName) -> Policy {
+        switch name {
+        case .property_brown_1: return Policy(pr)
+            
+        default:
+            fatalError("")
+        }
         return Policy(price: 200, tax: 20)
     }
     
@@ -162,6 +167,11 @@ class Monopoly {
 
     /// Amount of money a player starts with
     let playerStartingFunds = 1500
+    
+    let endRound: Double = 200.0
+    let luxaryTax: Double = 100.0
+    let incomeTax: Double = 200.0
+    
 
     /// Rent price for railroad if one is owned
     let railroadRentPrice = 25

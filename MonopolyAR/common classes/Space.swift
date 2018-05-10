@@ -18,22 +18,22 @@ protocol SpaceProtocol {
 struct Policy {
     var price: Double
     var tax: Double
+    
 }
 
 class ActionSpace: SpaceProtocol {
     
     enum Action {
-        case tax
+        case tax(price: Double)
         case communityChest
         case chance
         case toJail
-        case start
+        case start(price: Double)
         case none
     }
     var nodeName: NodeName
     var node: SCNNode
     var action: Action
-    
     init(nodeName: NodeName, node: SCNNode, action: Action) {
         self.action = action
         self.nodeName = nodeName 
@@ -41,7 +41,11 @@ class ActionSpace: SpaceProtocol {
     }
     
     func whenPlayerOnSpace(_ player: Player) {
-        
+        switch action {
+        case .tax(let price): player.removeMoney(amount: price)
+        case .start(let price):  player.removeMoney(amount: price)
+        default: return
+        }
     }
 }
 
@@ -81,6 +85,12 @@ class ComunalSpace: OwnedSpaceProtocol {
     
     func updateOwner(_ newOwner: Player) {
         newOwner.removeMoney(amount: ownershipPolicy.price)
+        node.isHidden = false
+        let playerPlace = node.childNode(withName: "place_players", recursively: false)!
+        playerPlace.isHidden = false
+        let material = playerPlace.geometry!.material(named: "color")!
+        material.diffuse.contents = UIColor.green
+        
         self.owner = newOwner
     }
     
