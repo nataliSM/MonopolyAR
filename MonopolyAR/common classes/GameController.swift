@@ -8,79 +8,71 @@
 
 import SceneKit
 
-final class GameController {
+protocol GameControllerDelegate: class {
+    func askBuyPermission(_ ownedSpace: OwnedSpaceProtocol, completion: @escaping (Bool) -> Void)
+}
+
+final class GameController: MonopolyDelegate {
     private let sceneSize = 25
-    let map = Map()
-
-    public var monopolySceneNode: SCNNode?
-
-    var catNode: Cat
-    var catPosition: int2 = int2(10, 0)
-    var lepriconNode: Lepricon
-    var lepriconPosition: int2 = int2(10, 0)
-    var currentLepriconPosition: Int = 0
-    var currentSmurfPosition: Int = 0
-
+    weak var delegate: GameControllerDelegate?
+    public var mapNode: SCNNode!
+    var monopoly: Monopoly
+    let text: SCNNode!
     init() {
-        if let monopolyScene = SCNScene(named: "monopolyScene.scn") {
-            monopolySceneNode = monopolyScene.rootNode.childNode(withName: "monopolyScene", recursively: true)
-            monopolySceneNode?.removeFromParentNode()
-        }
-        lepriconNode = Lepricon()
-        lepriconNode.scale = SCNVector3Make(0.1, 0.1, 0.1)
-        catNode = Cat()
-        catNode.scale = SCNVector3Make(0.1, 0.1, 0.1)
-    }
-
-    func reset() {
-        monopolySceneNode?.addChildNode(lepriconNode)
-        let lepriconPosition = map.position(for: currentLepriconPosition, step: 0)
-        placeLepricon(position: lepriconPosition)
-        monopolySceneNode?.addChildNode(catNode)
-         let smurfPosition = map.position(for: currentSmurfPosition, step: 0)
-        placeCat(position: smurfPosition)
+        let monopolyScene = SCNScene(named: "monopoly.scn")!
+        mapNode = monopolyScene.rootNode.childNode(withName: "monopoly_map", recursively: true)!
+        let scale = SCNVector3Make(0.06, 0.06, 0.06)
+        let lepriconNode = Lepricon()
+        lepriconNode.scale = scale
+        mapNode.addChildNode(lepriconNode)
+        let lepriconPlayer = Player(id: 0, name: "Lepricon", object: lepriconNode)
+        let smurfNode = Smurf()
+//        dice = Dice()
+//        dice.pivot = SCNMatrix4MakeTranslation(5, 0, 0)
+        smurfNode.scale = scale
+        mapNode.addChildNode(smurfNode)
+        let smurfPlayer = Player(id: 1, name: "Smurf", object: smurfNode)
+        self.text = mapNode.childNode(withName: "text", recursively: true)!
+        let box = text.boundingBox
+        text.pivot = SCNMatrix4MakeTranslation((box.max.x + box.min.x) / 2, 0, 0);
         
+        self.monopoly = Monopoly(players: [lepriconPlayer, smurfPlayer], mapNode: mapNode)
+        monopoly.delegate = self
+        startRotation()
+    }
+    
+    func startRotation() {
+        let rotateAction = SCNAction.rotate(by: CGFloat.pi * 2, around: SCNVector3(0, 0, 1), duration: 10.0)
+        text.runAction(SCNAction.repeatForever(rotateAction))
     }
 
     func addToNode(rootNode: SCNNode) {
-        guard let monopolyScene = monopolySceneNode else {
-            return
-        }
-        monopolyScene.removeFromParentNode()
-        rootNode.addChildNode(monopolyScene)
-        monopolyScene.scale = SCNVector3(0.1, 0.1, 0.1)
+        
+        rootNode.addChildNode(mapNode)
+//        monopolyScene.scale = SCNVector3(0.1, 0.1, 0.1)
     }
     
-    func step(on steps: Int) {
-        lepriconNode.removeFromParentNode()
-        monopolySceneNode?.addChildNode(lepriconNode)
-        let position = map.position(for: currentLepriconPosition, step: steps)
-        currentLepriconPosition += steps
-        placeLepricon(position: position)
+    func diceThrowResult(_ result: DiceResult, for player: Player) {
+        (text.geometry as! SCNText).string = "\(result.die1 + result.die2)"
+        let box = text.boundingBox
+        text.pivot = SCNMatrix4MakeTranslation((box.max.x + box.min.x) / 2, 0, 0);
+    }
+    
+    func playerBalanceDidChange(_ player: Player, balance: Double) {
         
     }
     
-    func placeLepricon(position: Position) {
-        lepriconPosition = position.coordinare
+    func playerDidBuyProperty(_ player: Player, property: PropertySpace) {
+        
+    }
     
-        lepriconNode.position = SCNVector3(Float(lepriconPosition.x), Float(lepriconPosition.y), Float(0))
-        lepriconNode.runAppearAnimation()
+    func playerDidStepOnOwnedSpace(_ player: Player, ownedSpace: OwnedSpaceProtocol) {
+        delegate?.askBuyPermission(ownedSpace, completion: { (isBuy) in
+            if isBuy {
+                ownedSpace.updateOwner(player)
+            }
+        })
     }
 
-    func stepCat(on steps: Int) {
-        catNode.removeFromParentNode()
-        monopolySceneNode?.addChildNode(catNode)
-        let position = map.position(for: currentSmurfPosition, step: steps)
-        currentSmurfPosition += steps
-        placeCat(position: position)
-
-    }
-
-    func placeCat(position: Position) {
-        catPosition = position.coordinare
-
-        catNode.position = SCNVector3(Float(catPosition.x), Float(catPosition.y), Float(0))
-        catNode.runAppearAnimation()
-    }
     
 }

@@ -10,7 +10,23 @@ import UIKit
 import SceneKit
 import ARKit
 
-final class ViewController: UIViewController, ARSCNViewDelegate {
+final class ViewController: UIViewController, ARSCNViewDelegate, GameControllerDelegate {
+    
+    func askBuyPermission(_ ownedSpace: OwnedSpaceProtocol, completion: @escaping (Bool) -> Void) {
+        let alertController = UIAlertController(title: "Предлжение о покупке", message: "Купить эту клутку за \(ownedSpace.ownershipPolicy.price)", preferredStyle: .actionSheet)
+        let okAction = UIAlertAction(title: "Ok", style: .default) { (_) in
+            completion(true)
+        }
+        
+        let noAction = UIAlertAction(title: "No", style: .cancel) { (_) in
+            completion(false)
+        }
+        
+        alertController.addAction(okAction)
+        alertController.addAction(noAction)
+        present(alertController, animated: true, completion: nil)
+    }
+    
 
     enum ViewState {
         case searchPlanes
@@ -23,7 +39,7 @@ final class ViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet weak var hintView: UIView!
     @IBOutlet weak var hintLabel: UILabel!
-    @IBOutlet weak var diceCount: UILabel!
+    
     
     var state: ViewState = .searchPlanes {
         didSet {
@@ -49,7 +65,7 @@ final class ViewController: UIViewController, ARSCNViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        gameController.delegate = self
         // Set the view's delegate
         sceneView.delegate = self
 
@@ -98,7 +114,6 @@ final class ViewController: UIViewController, ARSCNViewDelegate {
         configuration.planeDetection = .horizontal
         // Run the view's session
         sceneView.session.run(configuration)
-    
         state = .searchPlanes
     }
 
@@ -170,22 +185,13 @@ final class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBAction func startButtonTouched(_ sender: Any) {
         state = .playing
-        gameController.reset()
 
     }
 
     @IBAction func throwTheDice(_ sender: UIButton) {
-        let number = arc4random_uniform(12) + 1
-        diceCount.text = String(number)
-        if lepriconeGo {
-        gameController.step(on: Int(number))
-        lepriconeGo = false
-
-        } else {
-            gameController.stepCat(on: Int(number))
-            lepriconeGo = true
-        }
+        gameController.monopoly.nextTurn()
     }
+    
 }
 
 
@@ -194,7 +200,7 @@ extension GameController {
         let worldSize: Float = 20.0
         let minSize = min(anchor.extent.x, anchor.extent.z)
         let scale = minSize / worldSize
-        monopolySceneNode?.scale = SCNVector3(x: scale, y: scale, z: scale)
-        monopolySceneNode?.position = SCNVector3(anchor.center)
+//        monopolySceneNode?.scale = SCNVector3(x: scale, y: scale, z: scale)
+        mapNode.position = SCNVector3(anchor.center)
     }
 }
