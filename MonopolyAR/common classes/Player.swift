@@ -20,7 +20,7 @@ class Player: Equatable {
             onMoneyChange?(oldValue, funds, self)
         }
     }
-    var playerHasFreeCard: [Card] = []
+    //var playerHasFreeCard: [Card] = []
     var onMoneyChange: ((_ oldValue: Double, _ actual: Double, _ player: Player) -> Void)?
     
     init(id: Int, name: String, object: PlayerObject & SCNNode) {

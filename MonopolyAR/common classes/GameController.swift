@@ -10,9 +10,11 @@ import SceneKit
 
 protocol GameControllerDelegate: class {
     func askBuyPermission(_ ownedSpace: OwnedSpaceProtocol, completion: @escaping (Bool) -> Void)
+    func showChance(_ chance: Chance, completion: @escaping () -> Void)
 }
 
 final class GameController: MonopolyDelegate {
+    
     private let sceneSize = 25
     weak var delegate: GameControllerDelegate?
     public var mapNode: SCNNode!
@@ -70,6 +72,12 @@ final class GameController: MonopolyDelegate {
     
     func playerDidBuyProperty(_ player: Player, property: PropertySpace) {
         
+    }
+    
+    func playerStepOnChance(_ player: Player, chance: Chance) {
+        delegate?.showChance(chance, completion: { 
+            chance.apply(for: player)
+        })
     }
     
     func playerDidStepOnOwnedSpace(_ player: Player, ownedSpace: OwnedSpaceProtocol) {

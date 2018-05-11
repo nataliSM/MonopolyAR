@@ -15,6 +15,7 @@ typealias DiceResult = (die1: Int, die2: Int)
 protocol MonopolyDelegate: class {
     func diceThrowResult(_ result: DiceResult, for player: Player)
     func playerBalanceDidChange(_ player: Player, balance: Double)
+    func playerStepOnChance(_ player: Player, chance: Chance)
     func playerDidBuyProperty(_ player: Player, property: PropertySpace)
     func playerDidStepOnOwnedSpace(_ player: Player, ownedSpace: OwnedSpaceProtocol)
 }
@@ -44,7 +45,7 @@ class Monopoly {
             actionSpace(name: .space_income_tax_1, action: .tax(price: incomeTax)),
             trainStationSpace(name: .owned_space_reading_railroad),
             propertySpace(name: .property_light_blue_1),
-            actionSpace(name: .space_chance_1, action: .chance),
+            actionSpace(name: .space_chance_1, action: .chance(chances: chances)),
             propertySpace(name: .property_light_blue_2),
             propertySpace(name: .property_light_blue_3),
             jail,
@@ -59,7 +60,7 @@ class Monopoly {
             propertySpace(name: .property_orange_3),
             actionSpace(name: .space_free_parking, action: .none),
             propertySpace(name: .property_red_1),
-            actionSpace(name: .space_chance_2, action: .chance),
+            actionSpace(name: .space_chance_2, action: .chance(chances: chances)),
             propertySpace(name: .property_red_2),
             propertySpace(name: .property_red_3),
             trainStationSpace(name: .owned_space_bo_railroad),
@@ -73,7 +74,7 @@ class Monopoly {
             actionSpace(name: .space_cmn_chest_3, action: .communityChest),
             propertySpace(name: .property_green_3),
             trainStationSpace(name: .owned_space_short_line),
-            actionSpace(name: .space_chnce_3, action: .chance),
+            actionSpace(name: .space_chnce_3, action: .chance(chances: chances)),
             propertySpace(name: .property_blue_1),
             actionSpace(name: .space_luxary_tax, action: .tax(price: luxaryTax)),
             propertySpace(name: .property_blue_2)
@@ -110,7 +111,11 @@ class Monopoly {
             coin.node.worldPosition = placeIcon.worldPosition
         }
         
-        return ActionSpace(nodeName: name, node: node, action: action)
+        let action = ActionSpace(nodeName: name, node: node, action: action) 
+        action.chanceHandler = { [weak self] chance, player in
+            self?.delegate?.playerStepOnChance(player, chance: chance)
+        }
+        return action
     }
     
     private func trainStationSpace(name: NodeName) -> TrainStationSpace {
@@ -179,7 +184,7 @@ class Monopoly {
     
     var players: [Player] = []
     var activePlayer: Player
-
+    var chances: [Chance] = [Chance(name: "Test", description: "Тестовый шанс, получите 100 монет", action: .prize(100.0))]
     // Set up settings
     /// The maximum number of houses per property
     let maxHouseNumber = 5
@@ -223,17 +228,6 @@ class Monopoly {
     /// Factor for multiplication for a utility if two are owned
     /// - SeeAlso: utilityOneMultiplier
     let utilityTwoMultiplier = 4
-
-    // Cards
-    /// Array for "Chance" cards
-    /// - Warning: Only "Get out of Jail Free" cards should get removed (and re-added)
-    /// - SeeAlso: communityChestCards
-    var chanceCards: [Card] = []
-
-    /// Array for "Community Chest" cards
-    /// - Warning: Only "Get out of Jail Free" cards should get removed (and re-added)
-    /// - SeeAlso: chanceCards
-    var communityChestCards: [Card] = []
 
     /// Provides two random integers between 1 and 6
     /// - Returns: Two Integers from 1 to 6

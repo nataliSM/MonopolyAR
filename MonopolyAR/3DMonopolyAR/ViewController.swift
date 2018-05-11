@@ -9,22 +9,42 @@
 import UIKit
 import SceneKit
 import ARKit
+import BulletinBoard
 
 final class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, GameControllerDelegate {
-    
+
     func askBuyPermission(_ ownedSpace: OwnedSpaceProtocol, completion: @escaping (Bool) -> Void) {
-        let alertController = UIAlertController(title: "Предлжение о покупке", message: "Купить эту клутку за \(ownedSpace.ownershipPolicy.price)", preferredStyle: .actionSheet)
-        let okAction = UIAlertAction(title: "Ok", style: .default) { (_) in
+        
+        let page = PageBulletinItem(title: "Предложение о покупке")
+        page.image = #imageLiteral(resourceName: "shopping-store")
+        page.descriptionText = "Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla "
+        page.actionButtonTitle = "Купить за \(ownedSpace.ownershipPolicy.price)"
+        page.alternativeButtonTitle = "Отказаться"
+        page.actionHandler = { [weak self] item in
             completion(true)
+            self?.buyManager.dismissBulletin(animated: true)
         }
         
-        let noAction = UIAlertAction(title: "No", style: .cancel) { (_) in
+        page.alternativeHandler = { [weak self] item in
             completion(false)
+            self?.buyManager.dismissBulletin(animated: true)
         }
-        
-        alertController.addAction(okAction)
-        alertController.addAction(noAction)
-        present(alertController, animated: true, completion: nil)
+        let bulletinManager = BulletinManager(rootItem: page)
+        self.buyManager = bulletinManager
+        buyManager.prepare()
+        buyManager.presentBulletin(above: self)
+//        let alertController = UIAlertController(title: "Предлжение о покупке", message: "Купить эту клутку за \(ownedSpace.ownershipPolicy.price)", preferredStyle: .actionSheet)
+//        let okAction = UIAlertAction(title: "Ok", style: .default) { (_) in
+//            completion(true)
+//        }
+//        
+//        let noAction = UIAlertAction(title: "No", style: .cancel) { (_) in
+//            completion(false)
+//        }
+//        
+//        alertController.addAction(okAction)
+//        alertController.addAction(noAction)
+//        present(alertController, animated: true, completion: nil)
     }
     
 
@@ -40,7 +60,8 @@ final class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelega
     @IBOutlet weak var hintView: UIView!
     @IBOutlet weak var hintLabel: UILabel!
     
-    
+    var chanceManager: BulletinManager!
+    var buyManager: BulletinManager!
     var state: ViewState = .searchPlanes {
         didSet {
             updateHintView()
@@ -189,6 +210,25 @@ final class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelega
             }
         }
     }
+    
+    func showChance(_ chance: Chance, completion: @escaping () -> Void) {
+        
+        let page = PageBulletinItem(title: "Chance")
+        page.image = #imageLiteral(resourceName: "icons_question")
+        page.descriptionText = chance.description
+        page.actionButtonTitle = "Ok"
+        page.actionHandler = { [weak self] item in
+            completion()
+            self?.chanceManager.dismissBulletin(animated: true)
+        }
+        let bulletinManager = BulletinManager(rootItem: page)
+        self.chanceManager = bulletinManager
+        chanceManager.prepare()
+        chanceManager.presentBulletin(above: self)
+        
+    }
+    
+    
 
     @IBAction func startButtonTouched(_ sender: Any) {
         state = .playing

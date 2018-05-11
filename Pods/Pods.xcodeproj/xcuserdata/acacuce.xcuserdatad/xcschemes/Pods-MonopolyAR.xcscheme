@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A511D4C762DD5169C1F9F624A6441E9B"
+               BlueprintIdentifier = "4F27C1E228E4748EB0F425D3B08DB6CD"
                BuildableName = "Pods_MonopolyAR.framework"
                BlueprintName = "Pods-MonopolyAR"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A511D4C762DD5169C1F9F624A6441E9B"
+            BlueprintIdentifier = "4F27C1E228E4748EB0F425D3B08DB6CD"
             BuildableName = "Pods_MonopolyAR.framework"
             BlueprintName = "Pods-MonopolyAR"
             ReferencedContainer = "container:Pods.xcodeproj">

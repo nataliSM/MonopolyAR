@@ -25,8 +25,6 @@
 		055BE47520A0F2D3006DE246 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055BE47420A0F2D3006DE246 /* Card.swift */; };
 		055BE47B20A1C272006DE246 /* NodeName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055BE47A20A1C272006DE246 /* NodeName.swift */; };
 		058EDD8820A390AF0064ACB4 /* PullUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058EDD8720A390AE0064ACB4 /* PullUpController.swift */; };
-		355492DA79ED2C8457ADCD6E /* Pods_MonopolyARTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 100881FB2956CDE799EC7496 /* Pods_MonopolyARTests.framework */; };
-		6604A32C0E43E58E6FAFC826 /* Pods_MonopolyARUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7BB687C695E34B202CD8005 /* Pods_MonopolyARUITests.framework */; };
 		695D6A670A75268E9742FC84 /* Pods_MonopolyAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1CC763A58B5C79529B97EEE /* Pods_MonopolyAR.framework */; };
 		E10FE5101FDD42C2004B35DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10FE50F1FDD42C2004B35DA /* ViewController.swift */; };
 		E11498D91FDC00AC00BDBC95 /* lepricon.scn in Resources */ = {isa = PBXBuildFile; fileRef = E11498D81FDC00AC00BDBC95 /* lepricon.scn */; };
@@ -91,12 +89,11 @@
 		055BE47A20A1C272006DE246 /* NodeName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeName.swift; sourceTree = "<group>"; };
 		058EDD8720A390AE0064ACB4 /* PullUpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullUpController.swift; sourceTree = "<group>"; };
 		100881FB2956CDE799EC7496 /* Pods_MonopolyARTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonopolyARTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		193DC871B88E12892B6FF99E /* Pods-MonopolyARUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonopolyARUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MonopolyARUITests/Pods-MonopolyARUITests.release.xcconfig"; sourceTree = "<group>"; };
-		474E79B82902EDD9127F4D07 /* Pods-MonopolyARUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonopolyARUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MonopolyARUITests/Pods-MonopolyARUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		836FA008E4CB792A0DB0373A /* Pods-MonopolyARTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonopolyARTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MonopolyARTests/Pods-MonopolyARTests.release.xcconfig"; sourceTree = "<group>"; };
 		8D326AB176AE967329E9C793 /* Pods-MonopolyAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonopolyAR.release.xcconfig"; path = "Pods/Target Support Files/Pods-MonopolyAR/Pods-MonopolyAR.release.xcconfig"; sourceTree = "<group>"; };
 		A333CFEFEDD313F6E3E5053F /* Pods-MonopolyAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonopolyAR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MonopolyAR/Pods-MonopolyAR.debug.xcconfig"; sourceTree = "<group>"; };
 		B7BB687C695E34B202CD8005 /* Pods_MonopolyARUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonopolyARUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8D7CF447BF7DE224DFEDC4 /* Pods_MonopolyAR_MonopolyARTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonopolyAR_MonopolyARTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E047BA5F4B868A864A38D592 /* Pods-MonopolyARTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonopolyARTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MonopolyARTests/Pods-MonopolyARTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E10FE50F1FDD42C2004B35DA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E11498D81FDC00AC00BDBC95 /* lepricon.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = lepricon.scn; sourceTree = "<group>"; };
@@ -143,7 +140,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				355492DA79ED2C8457ADCD6E /* Pods_MonopolyARTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +147,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6604A32C0E43E58E6FAFC826 /* Pods_MonopolyARUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +159,7 @@
 				F1CC763A58B5C79529B97EEE /* Pods_MonopolyAR.framework */,
 				100881FB2956CDE799EC7496 /* Pods_MonopolyARTests.framework */,
 				B7BB687C695E34B202CD8005 /* Pods_MonopolyARUITests.framework */,
+				BB8D7CF447BF7DE224DFEDC4 /* Pods_MonopolyAR_MonopolyARTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,8 +171,6 @@
 				8D326AB176AE967329E9C793 /* Pods-MonopolyAR.release.xcconfig */,
 				E047BA5F4B868A864A38D592 /* Pods-MonopolyARTests.debug.xcconfig */,
 				836FA008E4CB792A0DB0373A /* Pods-MonopolyARTests.release.xcconfig */,
-				474E79B82902EDD9127F4D07 /* Pods-MonopolyARUITests.debug.xcconfig */,
-				193DC871B88E12892B6FF99E /* Pods-MonopolyARUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -320,12 +314,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1C166971FDBFE1B00F70B44 /* Build configuration list for PBXNativeTarget "MonopolyARTests" */;
 			buildPhases = (
-				CC2F99935C17A84B42CDB699 /* [CP] Check Pods Manifest.lock */,
 				E1C1667C1FDBFE1A00F70B44 /* Sources */,
 				E1C1667D1FDBFE1A00F70B44 /* Frameworks */,
 				E1C1667E1FDBFE1A00F70B44 /* Resources */,
-				63C54451D94E7F140B7977DE /* [CP] Embed Pods Frameworks */,
-				611D476C6756186926AC103E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -341,12 +332,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1C1669A1FDBFE1B00F70B44 /* Build configuration list for PBXNativeTarget "MonopolyARUITests" */;
 			buildPhases = (
-				BF5EF1BCF12AFBD2076A323D /* [CP] Check Pods Manifest.lock */,
 				E1C166871FDBFE1A00F70B44 /* Sources */,
 				E1C166881FDBFE1A00F70B44 /* Frameworks */,
 				E1C166891FDBFE1A00F70B44 /* Resources */,
-				ABFC1985456F8A33B42425B4 /* [CP] Embed Pods Frameworks */,
-				4D461D18E176F3DA7AED9695 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -448,21 +436,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4D461D18E176F3DA7AED9695 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MonopolyARUITests/Pods-MonopolyARUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		59EF2F02E9B1556FEC4A2A51 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -478,48 +451,18 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MonopolyAR/Pods-MonopolyAR-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		611D476C6756186926AC103E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MonopolyARTests/Pods-MonopolyARTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		63C54451D94E7F140B7977DE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MonopolyARTests/Pods-MonopolyARTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BulletinBoard/BulletinBoard.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BulletinBoard.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MonopolyARTests/Pods-MonopolyARTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6F72840130C85CD8654DE878 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MonopolyAR/Pods-MonopolyAR-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BulletinBoard/BulletinBoard.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BulletinBoard.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -538,57 +481,6 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-MonopolyAR-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ABFC1985456F8A33B42425B4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MonopolyARUITests/Pods-MonopolyARUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BF5EF1BCF12AFBD2076A323D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MonopolyARUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CC2F99935C17A84B42CDB699 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MonopolyARTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -811,7 +703,6 @@
 		};
 		E1C166981FDBFE1B00F70B44 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E047BA5F4B868A864A38D592 /* Pods-MonopolyARTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -829,7 +720,6 @@
 		};
 		E1C166991FDBFE1B00F70B44 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 836FA008E4CB792A0DB0373A /* Pods-MonopolyARTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -847,7 +737,6 @@
 		};
 		E1C1669B1FDBFE1B00F70B44 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 474E79B82902EDD9127F4D07 /* Pods-MonopolyARUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -864,7 +753,6 @@
 		};
 		E1C1669C1FDBFE1B00F70B44 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 193DC871B88E12892B6FF99E /* Pods-MonopolyARUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,6 +1,0 @@
-framework module Pods_MonopolyARUITests {
-  umbrella header "Pods-MonopolyARUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

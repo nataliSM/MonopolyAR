@@ -26,7 +26,7 @@ class ActionSpace: SpaceProtocol {
     enum Action {
         case tax(price: Double)
         case communityChest
-        case chance
+        case chance(chances: [Chance])
         case toJail(jailSpace: SpaceProtocol)
         case start
         case none
@@ -34,6 +34,7 @@ class ActionSpace: SpaceProtocol {
     var nodeName: NodeName
     var node: SCNNode
     var action: Action
+    var chanceHandler: ((Chance, Player) -> Void)?
     init(nodeName: NodeName, node: SCNNode, action: Action) {
         self.action = action
         self.nodeName = nodeName 
@@ -44,7 +45,9 @@ class ActionSpace: SpaceProtocol {
         switch action {
         case .tax(let price): player.removeMoney(amount: price)
         case .toJail(let jail): 
-            player.currentSpace = jail 
+            player.currentSpace = jail
+        case .chance(let chanses): chanceHandler?(chanses[0], player)
+            
         default: return
         }
     }

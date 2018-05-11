@@ -9,35 +9,29 @@
 /* Begin PBXBuildFile section */
 		1E970F52C223A773655BE2836B201FE8 /* BulletinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6978DE4E5A49491AE3C2001AAEA29561 /* BulletinManager.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		21F2F3A52D8D83DADCBC7256889A2223 /* BulletinSwipeInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461605E165C3C0B6CE716D76CF635288 /* BulletinSwipeInteractionController.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		37150155F9C800A828C62F700A8AF38C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		37963E4FAD1792C80B56BFFBFC082A90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		3CC15EC641E224EDC6653F4963DE3F20 /* UIView+SafeAnchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C1D87A0DD364EA9044A50F9B39BD65 /* UIView+SafeAnchors.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4435A18134C876936B8D8AC9212D2C4F /* BulletinPresentationAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8053121C6824DEDB822F6F239B4712B9 /* BulletinPresentationAnimationController.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		471AD43545CF527E94A788F50D6E9F62 /* Pods-MonopolyAR-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4246B5C64D66A70E6096E70632D1B577 /* Pods-MonopolyAR-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FBF1E3C0C5CD01636759ECE51ECE23F /* HighlightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C37F8D3ADD60E92524CD3582FDC1CB /* HighlightButton.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		6B41595B06B7C03AA7067A88667B1A58 /* Pods-MonopolyARTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE22EFD4832570D1E3BA878B4B9DBDF6 /* Pods-MonopolyARTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6CC1161378EC0FD29DFB4D1AF3190045 /* Pods-MonopolyAR-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00021446AE20AEBA72F28E92789B8FB9 /* Pods-MonopolyAR-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D71766340F4A9A723C5AF88EF504AEE /* Pods-MonopolyARUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C158B8ABCC8B3DF5B239988FFFB045E6 /* Pods-MonopolyARUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60AED009CE40DFC779F8B8B68AA65449 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		729BFD2A1F061C49A82A41FE87E30D09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		74B25B6D038A5E4CC8C48FE6251C15E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		820D01D78F012872F934B79EF9B92E90 /* PageBulletinItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA65BC7DE43C378F205F1B7331C558B /* PageBulletinItem.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8549D8D5A76C35C29B4B7D4742914C9D /* BulletinBoard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4DB4D2B45C79F7A161DA54830B7BE9 /* BulletinBoard-dummy.m */; };
 		8BA85C3F10BC4282DBC7FC8CB7FD04E7 /* BulletinItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AE38BD49C34D7DC5DD6F14B82A0598 /* BulletinItem.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		98A8A2E715161FE66395A7C710760FC1 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A771F383A3C8A171B77861EB7CC44719 /* ActivityIndicator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B5D82E22BA79BE29DBF7E81C760DAA82 /* BulletinBackgroundViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E89092C53D412AFB06E919E4E397085 /* BulletinBackgroundViewStyle.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B855AF695EFCB7B3566D9C275FE26CCD /* BulletinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399A3E42D508F5E44475EFDA55618289 /* BulletinViewController.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		BAFBBC15EDEC555D2990A0755896B15A /* Pods-MonopolyARTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 647CA3A2D818892590BB189BF503DC22 /* Pods-MonopolyARTests-dummy.m */; };
 		C7FA6783C208F6AD90FF460049A1EA3F /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96F170B5FF58BC9BAEE3AE29A08F600 /* ContainerView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		CA0D88AFBF74DAE8E17724ACC65ABD64 /* Pods-MonopolyAR-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95576DE221F189BACD78D03B496F9E06 /* Pods-MonopolyAR-dummy.m */; };
+		C95016BB9BAFF118FF2BDDAF691D8C6D /* Pods-MonopolyAR-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9441D7DAA9D951EBF1C65C2279FC74 /* Pods-MonopolyAR-dummy.m */; };
 		CABF4A23A2B881F7AB1B14B0D0D659D2 /* BulletinBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521F099AD416D5508B3C2CB422AF1C4 /* BulletinBackgroundView.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		EA353E738BA8BA43675A0B40B81ABA1C /* BulletinBoard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C042FC6096141DA405D5EF124E8EF0D /* BulletinBoard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F06D306A44F9834A4D27656CAB9B6D0D /* Pods-MonopolyARUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 669245DAFF25886EEC36A7131CA5A811 /* Pods-MonopolyARUITests-dummy.m */; };
 		F3F3E423E0AF3B2978647171F53684BD /* BulletinInterfaceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621A090162031C2FFE7DA1A5827A5369 /* BulletinInterfaceFactory.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F53E60CB031B847F5F427EA26D8A3ECC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
 		FFA438910F2ECCCFEA8AFAF44DD8C2EC /* BulletinDismissAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7B7598865EF506F8430D6A8ECDDBC0 /* BulletinDismissAnimationController.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9D7DA9A2B0FDA23AF216CBBFAAE68B24 /* PBXContainerItemProxy */ = {
+		0FA852DAF01E7D7FE7E8D4FFD420EB3F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -47,74 +41,44 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00021446AE20AEBA72F28E92789B8FB9 /* Pods-MonopolyAR-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MonopolyAR-umbrella.h"; sourceTree = "<group>"; };
-		06E463558099F196FDE3928EC6B7C683 /* Pods-MonopolyARUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MonopolyARUITests.release.xcconfig"; sourceTree = "<group>"; };
 		07C37F8D3ADD60E92524CD3582FDC1CB /* HighlightButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HighlightButton.swift; path = Sources/Support/HighlightButton.swift; sourceTree = "<group>"; };
-		0EEBBFCF75F7DE3F185DB869875ADCD9 /* Pods_MonopolyAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MonopolyAR.framework; path = "Pods-MonopolyAR.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FDD3F3FE6E4138D0FD8157CF523C9CF /* Pods-MonopolyAR.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MonopolyAR.modulemap"; sourceTree = "<group>"; };
 		12ED2B16EF27EF7904A8C9D9AE56AEA2 /* BulletinBoard.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BulletinBoard.xcconfig; sourceTree = "<group>"; };
+		16080E151BE11B0B6B8031D1A07EC1F6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E89092C53D412AFB06E919E4E397085 /* BulletinBackgroundViewStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BulletinBackgroundViewStyle.swift; path = Sources/BulletinBackgroundViewStyle.swift; sourceTree = "<group>"; };
-		25B309F28E153745EC63A9E1BB8CA7DD /* Pods-MonopolyAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MonopolyAR.release.xcconfig"; sourceTree = "<group>"; };
-		2B3F1591ACE29012CB761D6CA7D0E4CA /* Pods-MonopolyARTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MonopolyARTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		2D929CA2FDD4138D3B059D474D09C226 /* Pods-MonopolyARUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MonopolyARUITests-resources.sh"; sourceTree = "<group>"; };
+		2B9441D7DAA9D951EBF1C65C2279FC74 /* Pods-MonopolyAR-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MonopolyAR-dummy.m"; sourceTree = "<group>"; };
+		36523731765CBB17EDCF54A7097F7235 /* Pods-MonopolyAR-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MonopolyAR-resources.sh"; sourceTree = "<group>"; };
 		399A3E42D508F5E44475EFDA55618289 /* BulletinViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BulletinViewController.swift; path = Sources/BulletinViewController.swift; sourceTree = "<group>"; };
+		39D4228FCA95E031B31D3EDAF62A03CC /* BulletinBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BulletinBoard.framework; path = BulletinBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		409C8E142AF36C2912C52121487FD24C /* BulletinBoard-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BulletinBoard-prefix.pch"; sourceTree = "<group>"; };
+		4246B5C64D66A70E6096E70632D1B577 /* Pods-MonopolyAR-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MonopolyAR-umbrella.h"; sourceTree = "<group>"; };
 		461605E165C3C0B6CE716D76CF635288 /* BulletinSwipeInteractionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BulletinSwipeInteractionController.swift; path = Sources/Support/BulletinSwipeInteractionController.swift; sourceTree = "<group>"; };
-		494D7CCC0C2753AE005F4EA1AF7E619C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F7B7598865EF506F8430D6A8ECDDBC0 /* BulletinDismissAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BulletinDismissAnimationController.swift; path = Sources/Support/BulletinDismissAnimationController.swift; sourceTree = "<group>"; };
-		5665FAC6F1C7294777B2729784F097AB /* Pods-MonopolyARUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MonopolyARUITests.modulemap"; sourceTree = "<group>"; };
-		5D100AD6EC761359B41004D4AC0D6F73 /* Pods_MonopolyARUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MonopolyARUITests.framework; path = "Pods-MonopolyARUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		621A090162031C2FFE7DA1A5827A5369 /* BulletinInterfaceFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BulletinInterfaceFactory.swift; path = Sources/BulletinInterfaceFactory.swift; sourceTree = "<group>"; };
-		647CA3A2D818892590BB189BF503DC22 /* Pods-MonopolyARTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MonopolyARTests-dummy.m"; sourceTree = "<group>"; };
-		669245DAFF25886EEC36A7131CA5A811 /* Pods-MonopolyARUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MonopolyARUITests-dummy.m"; sourceTree = "<group>"; };
 		6978DE4E5A49491AE3C2001AAEA29561 /* BulletinManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BulletinManager.swift; path = Sources/BulletinManager.swift; sourceTree = "<group>"; };
-		6A644ACA430E7C64EAA1646962ACFFE0 /* Pods-MonopolyARUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MonopolyARUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6BA329E42DD22B43A381DF0316D40D19 /* Pods-MonopolyAR-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MonopolyAR-acknowledgements.plist"; sourceTree = "<group>"; };
 		6C042FC6096141DA405D5EF124E8EF0D /* BulletinBoard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BulletinBoard-umbrella.h"; sourceTree = "<group>"; };
-		7099DA42817161C41705C178CE2385DE /* Pods-MonopolyARTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MonopolyARTests.modulemap"; sourceTree = "<group>"; };
 		7521F099AD416D5508B3C2CB422AF1C4 /* BulletinBackgroundView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BulletinBackgroundView.swift; path = Sources/Support/BulletinBackgroundView.swift; sourceTree = "<group>"; };
-		796A67D283E7071FD697C52C124A6919 /* Pods_MonopolyARTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MonopolyARTests.framework; path = "Pods-MonopolyARTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		79F276E7357F0F58B106DAD661C4FCEA /* Pods-MonopolyAR-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MonopolyAR-resources.sh"; sourceTree = "<group>"; };
 		7F4DB4D2B45C79F7A161DA54830B7BE9 /* BulletinBoard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BulletinBoard-dummy.m"; sourceTree = "<group>"; };
+		7FE92A5F7F6EF2A2CD748D556FC5DAAF /* Pods-MonopolyAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MonopolyAR.debug.xcconfig"; sourceTree = "<group>"; };
 		8053121C6824DEDB822F6F239B4712B9 /* BulletinPresentationAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BulletinPresentationAnimationController.swift; path = Sources/Support/BulletinPresentationAnimationController.swift; sourceTree = "<group>"; };
-		83625D092EF50A6FA9F97AF658AE062F /* Pods-MonopolyARTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MonopolyARTests.release.xcconfig"; sourceTree = "<group>"; };
-		86E0FB54C2328B9FA5BF0DAA5F212B74 /* Pods-MonopolyARUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MonopolyARUITests-frameworks.sh"; sourceTree = "<group>"; };
 		87C1D87A0DD364EA9044A50F9B39BD65 /* UIView+SafeAnchors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+SafeAnchors.swift"; path = "Sources/Support/UIView+SafeAnchors.swift"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95576DE221F189BACD78D03B496F9E06 /* Pods-MonopolyAR-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MonopolyAR-dummy.m"; sourceTree = "<group>"; };
-		9659AC4C5CE80A1F525CF05CF34403D5 /* Pods-MonopolyAR.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MonopolyAR.modulemap"; sourceTree = "<group>"; };
-		970BA6E726CE61E52CCD31BED66EB388 /* Pods-MonopolyAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MonopolyAR.debug.xcconfig"; sourceTree = "<group>"; };
-		983F121BC20A01FEFD73B152D780AFCC /* Pods-MonopolyAR-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MonopolyAR-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A124E905FB76E0A0D9B786A67EE899F2 /* Pods-MonopolyARUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MonopolyARUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		94C9D247675676C876F5DEAB824F7D13 /* Pods-MonopolyAR-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MonopolyAR-frameworks.sh"; sourceTree = "<group>"; };
 		A771F383A3C8A171B77861EB7CC44719 /* ActivityIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActivityIndicator.swift; path = Sources/Support/ActivityIndicator.swift; sourceTree = "<group>"; };
 		ABA65BC7DE43C378F205F1B7331C558B /* PageBulletinItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageBulletinItem.swift; path = Sources/PageBulletinItem.swift; sourceTree = "<group>"; };
+		AF6D2C4751782DC8D60508A67268B3E9 /* Pods_MonopolyAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MonopolyAR.framework; path = "Pods-MonopolyAR.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		BB2D79984FF6D4E115464FAB1F526D82 /* Pods-MonopolyARTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MonopolyARTests-frameworks.sh"; sourceTree = "<group>"; };
-		C158B8ABCC8B3DF5B239988FFFB045E6 /* Pods-MonopolyARUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MonopolyARUITests-umbrella.h"; sourceTree = "<group>"; };
-		C2DA084C05C0E34687124468ECE32B37 /* Pods-MonopolyAR-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MonopolyAR-acknowledgements.plist"; sourceTree = "<group>"; };
+		BD40745817CD08A4B0D5904366DE5319 /* Pods-MonopolyAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MonopolyAR.release.xcconfig"; sourceTree = "<group>"; };
 		C722E71858E48B13AE7A8BBC2FD95395 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C79466EF54F8AA664C679D39DB891F11 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBBCDAF0C6BE2F368D76543847654294 /* BulletinBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BulletinBoard.framework; path = BulletinBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE22EFD4832570D1E3BA878B4B9DBDF6 /* Pods-MonopolyARTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MonopolyARTests-umbrella.h"; sourceTree = "<group>"; };
-		D3AE9576144F3E23D2C7C2C004684459 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4E4B6B77AE5F13D8F250933D307AABC /* Pods-MonopolyARTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MonopolyARTests-resources.sh"; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DAB0BAF628A9F92A064578631F46FF5F /* Pods-MonopolyARTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MonopolyARTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E2272B247E118B282FA2594B2B372BB9 /* BulletinBoard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BulletinBoard.modulemap; sourceTree = "<group>"; };
-		E3985B0AB41A6F184894DCD4D02F9F07 /* Pods-MonopolyAR-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MonopolyAR-frameworks.sh"; sourceTree = "<group>"; };
-		E445B30BA0E6A143347DAB9B5E602BE3 /* Pods-MonopolyARTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MonopolyARTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E8C73A3546CCA2258F59A0A8A00B0F2A /* Pods-MonopolyARUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MonopolyARUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		E96F170B5FF58BC9BAEE3AE29A08F600 /* ContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainerView.swift; path = Sources/Support/ContainerView.swift; sourceTree = "<group>"; };
+		F823C4E4294C4BD517B2D7EE2E9A9E94 /* Pods-MonopolyAR-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MonopolyAR-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F9AE38BD49C34D7DC5DD6F14B82A0598 /* BulletinItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BulletinItem.swift; path = Sources/BulletinItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		02DD98F047B1B450497F9A009AB20FB3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				37963E4FAD1792C80B56BFFBFC082A90 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		61F6EF4332AED2FEA4212E2E4DD3356F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,19 +88,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		723D332ED4868046D103F8FB05680309 /* Frameworks */ = {
+		760E88727AC1699CB6478F43D8D094DB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37150155F9C800A828C62F700A8AF38C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C572C540BEB30A82101879813B3BBCD9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				74B25B6D038A5E4CC8C48FE6251C15E8 /* Foundation.framework in Frameworks */,
+				60AED009CE40DFC779F8B8B68AA65449 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,35 +105,6 @@
 				28CE8751D86857B34B4A1215F87FEEE2 /* BulletinBoard */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		1B089017F08EDD462BF58EA8E8F30122 /* Pods-MonopolyARUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D3AE9576144F3E23D2C7C2C004684459 /* Info.plist */,
-				5665FAC6F1C7294777B2729784F097AB /* Pods-MonopolyARUITests.modulemap */,
-				A124E905FB76E0A0D9B786A67EE899F2 /* Pods-MonopolyARUITests-acknowledgements.markdown */,
-				E8C73A3546CCA2258F59A0A8A00B0F2A /* Pods-MonopolyARUITests-acknowledgements.plist */,
-				669245DAFF25886EEC36A7131CA5A811 /* Pods-MonopolyARUITests-dummy.m */,
-				86E0FB54C2328B9FA5BF0DAA5F212B74 /* Pods-MonopolyARUITests-frameworks.sh */,
-				2D929CA2FDD4138D3B059D474D09C226 /* Pods-MonopolyARUITests-resources.sh */,
-				C158B8ABCC8B3DF5B239988FFFB045E6 /* Pods-MonopolyARUITests-umbrella.h */,
-				6A644ACA430E7C64EAA1646962ACFFE0 /* Pods-MonopolyARUITests.debug.xcconfig */,
-				06E463558099F196FDE3928EC6B7C683 /* Pods-MonopolyARUITests.release.xcconfig */,
-			);
-			name = "Pods-MonopolyARUITests";
-			path = "Target Support Files/Pods-MonopolyARUITests";
-			sourceTree = "<group>";
-		};
-		1F5442D81B8FB7838C5EA53A3C32CA73 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CBBCDAF0C6BE2F368D76543847654294 /* BulletinBoard.framework */,
-				0EEBBFCF75F7DE3F185DB869875ADCD9 /* Pods_MonopolyAR.framework */,
-				796A67D283E7071FD697C52C124A6919 /* Pods_MonopolyARTests.framework */,
-				5D100AD6EC761359B41004D4AC0D6F73 /* Pods_MonopolyARUITests.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		28CE8751D86857B34B4A1215F87FEEE2 /* BulletinBoard */ = {
@@ -220,43 +147,50 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		484E0B3B7AC0F82B04E6FA5B191C8E0F /* Pods-MonopolyAR */ = {
+			isa = PBXGroup;
+			children = (
+				16080E151BE11B0B6B8031D1A07EC1F6 /* Info.plist */,
+				0FDD3F3FE6E4138D0FD8157CF523C9CF /* Pods-MonopolyAR.modulemap */,
+				F823C4E4294C4BD517B2D7EE2E9A9E94 /* Pods-MonopolyAR-acknowledgements.markdown */,
+				6BA329E42DD22B43A381DF0316D40D19 /* Pods-MonopolyAR-acknowledgements.plist */,
+				2B9441D7DAA9D951EBF1C65C2279FC74 /* Pods-MonopolyAR-dummy.m */,
+				94C9D247675676C876F5DEAB824F7D13 /* Pods-MonopolyAR-frameworks.sh */,
+				36523731765CBB17EDCF54A7097F7235 /* Pods-MonopolyAR-resources.sh */,
+				4246B5C64D66A70E6096E70632D1B577 /* Pods-MonopolyAR-umbrella.h */,
+				7FE92A5F7F6EF2A2CD748D556FC5DAAF /* Pods-MonopolyAR.debug.xcconfig */,
+				BD40745817CD08A4B0D5904366DE5319 /* Pods-MonopolyAR.release.xcconfig */,
+			);
+			name = "Pods-MonopolyAR";
+			path = "Target Support Files/Pods-MonopolyAR";
+			sourceTree = "<group>";
+		};
+		55D1F447D9174F765E722E9E6CD1CA1A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				484E0B3B7AC0F82B04E6FA5B191C8E0F /* Pods-MonopolyAR */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				0EFC2332B4D5438136130F84E7F4E708 /* Pods */,
-				1F5442D81B8FB7838C5EA53A3C32CA73 /* Products */,
-				BCD4EFECCCD53A4B0BAFE6652AE049B9 /* Targets Support Files */,
+				7E9549D04C9862B707C5653A628C45FA /* Products */,
+				55D1F447D9174F765E722E9E6CD1CA1A /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8A83D44562D68701F805BCD2C5EB5CFB /* Pods-MonopolyARTests */ = {
+		7E9549D04C9862B707C5653A628C45FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				494D7CCC0C2753AE005F4EA1AF7E619C /* Info.plist */,
-				7099DA42817161C41705C178CE2385DE /* Pods-MonopolyARTests.modulemap */,
-				DAB0BAF628A9F92A064578631F46FF5F /* Pods-MonopolyARTests-acknowledgements.markdown */,
-				2B3F1591ACE29012CB761D6CA7D0E4CA /* Pods-MonopolyARTests-acknowledgements.plist */,
-				647CA3A2D818892590BB189BF503DC22 /* Pods-MonopolyARTests-dummy.m */,
-				BB2D79984FF6D4E115464FAB1F526D82 /* Pods-MonopolyARTests-frameworks.sh */,
-				D4E4B6B77AE5F13D8F250933D307AABC /* Pods-MonopolyARTests-resources.sh */,
-				CE22EFD4832570D1E3BA878B4B9DBDF6 /* Pods-MonopolyARTests-umbrella.h */,
-				E445B30BA0E6A143347DAB9B5E602BE3 /* Pods-MonopolyARTests.debug.xcconfig */,
-				83625D092EF50A6FA9F97AF658AE062F /* Pods-MonopolyARTests.release.xcconfig */,
+				39D4228FCA95E031B31D3EDAF62A03CC /* BulletinBoard.framework */,
+				AF6D2C4751782DC8D60508A67268B3E9 /* Pods_MonopolyAR.framework */,
 			);
-			name = "Pods-MonopolyARTests";
-			path = "Target Support Files/Pods-MonopolyARTests";
-			sourceTree = "<group>";
-		};
-		BCD4EFECCCD53A4B0BAFE6652AE049B9 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F4A8F043EC81B90E718F8DAC4B9FB419 /* Pods-MonopolyAR */,
-				8A83D44562D68701F805BCD2C5EB5CFB /* Pods-MonopolyARTests */,
-				1B089017F08EDD462BF58EA8E8F30122 /* Pods-MonopolyARUITests */,
-			);
-			name = "Targets Support Files";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		C08C1ADCACBA3773C94A4D23AFFA3045 /* Support Files */ = {
@@ -273,35 +207,9 @@
 			path = "../Target Support Files/BulletinBoard";
 			sourceTree = "<group>";
 		};
-		F4A8F043EC81B90E718F8DAC4B9FB419 /* Pods-MonopolyAR */ = {
-			isa = PBXGroup;
-			children = (
-				C79466EF54F8AA664C679D39DB891F11 /* Info.plist */,
-				9659AC4C5CE80A1F525CF05CF34403D5 /* Pods-MonopolyAR.modulemap */,
-				983F121BC20A01FEFD73B152D780AFCC /* Pods-MonopolyAR-acknowledgements.markdown */,
-				C2DA084C05C0E34687124468ECE32B37 /* Pods-MonopolyAR-acknowledgements.plist */,
-				95576DE221F189BACD78D03B496F9E06 /* Pods-MonopolyAR-dummy.m */,
-				E3985B0AB41A6F184894DCD4D02F9F07 /* Pods-MonopolyAR-frameworks.sh */,
-				79F276E7357F0F58B106DAD661C4FCEA /* Pods-MonopolyAR-resources.sh */,
-				00021446AE20AEBA72F28E92789B8FB9 /* Pods-MonopolyAR-umbrella.h */,
-				970BA6E726CE61E52CCD31BED66EB388 /* Pods-MonopolyAR.debug.xcconfig */,
-				25B309F28E153745EC63A9E1BB8CA7DD /* Pods-MonopolyAR.release.xcconfig */,
-			);
-			name = "Pods-MonopolyAR";
-			path = "Target Support Files/Pods-MonopolyAR";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2C03479350B5267687B520858F869682 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6B41595B06B7C03AA7067A88667B1A58 /* Pods-MonopolyARTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6455A88A4769F0BBFBE614EF5D19C4FD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,19 +218,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		71AB689CCA42720F3A797842954EE983 /* Headers */ = {
+		78EF5AC38D5BFC647D3EF789A5FC3FD4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CC1161378EC0FD29DFB4D1AF3190045 /* Pods-MonopolyAR-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8D1681ACAB0408921284DE0A61F07278 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6D71766340F4A9A723C5AF88EF504AEE /* Pods-MonopolyARUITests-umbrella.h in Headers */,
+				471AD43545CF527E94A788F50D6E9F62 /* Pods-MonopolyAR-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,59 +243,25 @@
 			);
 			name = BulletinBoard;
 			productName = BulletinBoard;
-			productReference = CBBCDAF0C6BE2F368D76543847654294 /* BulletinBoard.framework */;
+			productReference = 39D4228FCA95E031B31D3EDAF62A03CC /* BulletinBoard.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		467B4D3CC0C0C1C219B0628FFE64408B /* Pods-MonopolyARUITests */ = {
+		4F27C1E228E4748EB0F425D3B08DB6CD /* Pods-MonopolyAR */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED3FFC4ECA11A4300A1C247C7893C431 /* Build configuration list for PBXNativeTarget "Pods-MonopolyARUITests" */;
+			buildConfigurationList = 7DBAF4BCC8E8759C8B581F3672B229B4 /* Build configuration list for PBXNativeTarget "Pods-MonopolyAR" */;
 			buildPhases = (
-				D0F6C1B57ACBECC76A6E8C25FCA2A2A5 /* Sources */,
-				723D332ED4868046D103F8FB05680309 /* Frameworks */,
-				8D1681ACAB0408921284DE0A61F07278 /* Headers */,
+				E4790F4DAC91E8E405E75591C7C347D7 /* Sources */,
+				760E88727AC1699CB6478F43D8D094DB /* Frameworks */,
+				78EF5AC38D5BFC647D3EF789A5FC3FD4 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = "Pods-MonopolyARUITests";
-			productName = "Pods-MonopolyARUITests";
-			productReference = 5D100AD6EC761359B41004D4AC0D6F73 /* Pods_MonopolyARUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A511D4C762DD5169C1F9F624A6441E9B /* Pods-MonopolyAR */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9D67552CB57331F2D35D564B99821050 /* Build configuration list for PBXNativeTarget "Pods-MonopolyAR" */;
-			buildPhases = (
-				FCAFDB707D37EC60D895C389C101F5B1 /* Sources */,
-				02DD98F047B1B450497F9A009AB20FB3 /* Frameworks */,
-				71AB689CCA42720F3A797842954EE983 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
+				76E1E1930213D47E4B39667951FC9339 /* PBXTargetDependency */,
 			);
 			name = "Pods-MonopolyAR";
 			productName = "Pods-MonopolyAR";
-			productReference = 0EEBBFCF75F7DE3F185DB869875ADCD9 /* Pods_MonopolyAR.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		EB060EBAE003FF7B183A35198CCB9D2D /* Pods-MonopolyARTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3DF2A6670DF7C1A09D584BE6C81B5AEB /* Build configuration list for PBXNativeTarget "Pods-MonopolyARTests" */;
-			buildPhases = (
-				D367F46816E3E0B92A6E144FF2DC1701 /* Sources */,
-				C572C540BEB30A82101879813B3BBCD9 /* Frameworks */,
-				2C03479350B5267687B520858F869682 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D2E38D12B79F6282D2EB93B4CEC5FAA8 /* PBXTargetDependency */,
-			);
-			name = "Pods-MonopolyARTests";
-			productName = "Pods-MonopolyARTests";
-			productReference = 796A67D283E7071FD697C52C124A6919 /* Pods_MonopolyARTests.framework */;
+			productReference = AF6D2C4751782DC8D60508A67268B3E9 /* Pods_MonopolyAR.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -415,14 +281,12 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 1F5442D81B8FB7838C5EA53A3C32CA73 /* Products */;
+			productRefGroup = 7E9549D04C9862B707C5653A628C45FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				27A96C322C22E4011A3A9A58D7EDBCC0 /* BulletinBoard */,
-				A511D4C762DD5169C1F9F624A6441E9B /* Pods-MonopolyAR */,
-				EB060EBAE003FF7B183A35198CCB9D2D /* Pods-MonopolyARTests */,
-				467B4D3CC0C0C1C219B0628FFE64408B /* Pods-MonopolyARUITests */,
+				4F27C1E228E4748EB0F425D3B08DB6CD /* Pods-MonopolyAR */,
 			);
 		};
 /* End PBXProject section */
@@ -450,38 +314,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D0F6C1B57ACBECC76A6E8C25FCA2A2A5 /* Sources */ = {
+		E4790F4DAC91E8E405E75591C7C347D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F06D306A44F9834A4D27656CAB9B6D0D /* Pods-MonopolyARUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D367F46816E3E0B92A6E144FF2DC1701 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BAFBBC15EDEC555D2990A0755896B15A /* Pods-MonopolyARTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FCAFDB707D37EC60D895C389C101F5B1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CA0D88AFBF74DAE8E17724ACC65ABD64 /* Pods-MonopolyAR-dummy.m in Sources */,
+				C95016BB9BAFF118FF2BDDAF691D8C6D /* Pods-MonopolyAR-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D2E38D12B79F6282D2EB93B4CEC5FAA8 /* PBXTargetDependency */ = {
+		76E1E1930213D47E4B39667951FC9339 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BulletinBoard;
 			target = 27A96C322C22E4011A3A9A58D7EDBCC0 /* BulletinBoard */;
-			targetProxy = 9D7DA9A2B0FDA23AF216CBBFAAE68B24 /* PBXContainerItemProxy */;
+			targetProxy = 0FA852DAF01E7D7FE7E8D4FFD420EB3F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -572,72 +420,6 @@
 			};
 			name = Debug;
 		};
-		31517423CE77C90ACB7AF68EBA2806A2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E445B30BA0E6A143347DAB9B5E602BE3 /* Pods-MonopolyARTests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MonopolyARTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MonopolyARTests/Pods-MonopolyARTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MonopolyARTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		36CC2F2E325E2BCC11F43CB89E83EA25 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A644ACA430E7C64EAA1646962ACFFE0 /* Pods-MonopolyARUITests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MonopolyARUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MonopolyARUITests/Pods-MonopolyARUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MonopolyARUITests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		59F0302F2371FCC6B73EF0A418D40734 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -698,76 +480,9 @@
 			};
 			name = Debug;
 		};
-		8C6660D690CABC2D22601949F54515A7 /* Release */ = {
+		9C2AAF92F02DC8C0E0D2866BC946BBBE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83625D092EF50A6FA9F97AF658AE062F /* Pods-MonopolyARTests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MonopolyARTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MonopolyARTests/Pods-MonopolyARTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MonopolyARTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A974F7F39956C6B2D0D59273FF2243DE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06E463558099F196FDE3928EC6B7C683 /* Pods-MonopolyARUITests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MonopolyARUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MonopolyARUITests/Pods-MonopolyARUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MonopolyARUITests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D1654D3FF8DA2CCA8F3A0462A7F951FD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 970BA6E726CE61E52CCD31BED66EB388 /* Pods-MonopolyAR.debug.xcconfig */;
+			baseConfigurationReference = 7FE92A5F7F6EF2A2CD748D556FC5DAAF /* Pods-MonopolyAR.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -791,6 +506,8 @@
 				PRODUCT_NAME = Pods_MonopolyAR;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -829,9 +546,9 @@
 			};
 			name = Release;
 		};
-		E23CF158DB1363C141FE1BA55A40E389 /* Release */ = {
+		E88F13FFEB7DCDF5FB975B84ECB59819 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25B309F28E153745EC63A9E1BB8CA7DD /* Pods-MonopolyAR.release.xcconfig */;
+			baseConfigurationReference = BD40745817CD08A4B0D5904366DE5319 /* Pods-MonopolyAR.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -855,6 +572,7 @@
 				PRODUCT_NAME = Pods_MonopolyAR;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -874,15 +592,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3DF2A6670DF7C1A09D584BE6C81B5AEB /* Build configuration list for PBXNativeTarget "Pods-MonopolyARTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				31517423CE77C90ACB7AF68EBA2806A2 /* Debug */,
-				8C6660D690CABC2D22601949F54515A7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		772407F64D32D60DA51A3B2374B6EF68 /* Build configuration list for PBXNativeTarget "BulletinBoard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -892,20 +601,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D67552CB57331F2D35D564B99821050 /* Build configuration list for PBXNativeTarget "Pods-MonopolyAR" */ = {
+		7DBAF4BCC8E8759C8B581F3672B229B4 /* Build configuration list for PBXNativeTarget "Pods-MonopolyAR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D1654D3FF8DA2CCA8F3A0462A7F951FD /* Debug */,
-				E23CF158DB1363C141FE1BA55A40E389 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ED3FFC4ECA11A4300A1C247C7893C431 /* Build configuration list for PBXNativeTarget "Pods-MonopolyARUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				36CC2F2E325E2BCC11F43CB89E83EA25 /* Debug */,
-				A974F7F39956C6B2D0D59273FF2243DE /* Release */,
+				9C2AAF92F02DC8C0E0D2866BC946BBBE /* Debug */,
+				E88F13FFEB7DCDF5FB975B84ECB59819 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

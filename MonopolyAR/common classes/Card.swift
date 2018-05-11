@@ -9,24 +9,38 @@
 import Foundation
 
 /// A Chance or Community Chest card
-class Card {
-    /// Choice of Chance or Community Chest cards
-    enum format {
-        case communityChest
-        case chance
+class Chance {
+    enum Action {
+        case tax(Double)
+        case prize(Double)
+        case move(to: SpaceProtocol)
+        case take(from: [Player], price: Double)
+        case give(to: [Player], price: Double)
     }
     
-    /// Select a card within an array randomly
-    /// - SeeAlso: chanceCards communityChestCards
-    /// - Parameter type: Card.format either .chance or .communityChest
-    static func drawCard(type: format) {
-        switch type {
-        case .chance:
-            break
-        // chanceCards
-        case .communityChest:
-            break
-            // communityChestCards
+    let name: String
+    let action: Action
+    let description: String
+    
+    init(name: String, description: String, action: Action) {
+        self.name = name
+        self.description = description
+        self.action = action
+    }
+    
+    func apply(for player: Player) {
+        switch action {
+        case .tax(let price):
+            player.removeMoney(amount: price)
+        case .prize(let price):
+            player.addMoney(amount: price)
+        default:
+            return
         }
     }
 }
+
+class CommunityChest {
+    
+}
+
