@@ -20,7 +20,7 @@ extension PlayerObject {
         let money = node.childNode(withName: "money", recursively: false)!
 //        var box = money.boundingBox
 //        print("Box \(box.min) - \(box.max)")
-        (money.geometry as! SCNText).string = "\(funds)£"
+        (money.geometry as! SCNText).string = "\(Int(funds))£"
 //        box = money.boundingBox
 //        print("Box \(box.min) - \(box.max)")
 //        money.pivot = SCNMatrix4MakeTranslation((box.max.x + box.min.x) / 2, 0, 0);

@@ -35,6 +35,7 @@ class Monopoly {
     }
     
     func buildMap() -> [SpaceProtocol] {
+        let jail = actionSpace(name: .space_jail, action: .none)
         let map: [SpaceProtocol] = [
             actionSpace(name: .space_start, action: .start),
             propertySpace(name: .property_brown_1),
@@ -46,7 +47,7 @@ class Monopoly {
             actionSpace(name: .space_chance_1, action: .chance),
             propertySpace(name: .property_light_blue_2),
             propertySpace(name: .property_light_blue_3),
-            actionSpace(name: .space_jail, action: .none),
+            jail,
             propertySpace(name: .property_pink_1),
             comunalSpace(name: .owned_space_electricity),
             propertySpace(name: .property_pink_2),
@@ -66,7 +67,7 @@ class Monopoly {
             propertySpace(name: .property_yellow_2),
             comunalSpace(name: .owned_space_water_works),
             propertySpace(name: .property_yellow_3),
-            actionSpace(name: .smace_go_to_jail, action: .toJail),
+            actionSpace(name: .smace_go_to_jail, action: .toJail(jailSpace: jail)),
             propertySpace(name: .property_green_1),
             propertySpace(name: .property_green_2),
             actionSpace(name: .space_cmn_chest_3, action: .communityChest),
@@ -81,7 +82,7 @@ class Monopoly {
     }
     
     private func actionSpace(name: NodeName, action: ActionSpace.Action) -> ActionSpace {
-        var node = self.node(name: name)
+        let node = self.node(name: name)
         if case .communityChest = action {
             let placeIcon = node.childNode(withName: "place_icon", recursively: true)!
             let chest = Chest()
@@ -98,6 +99,15 @@ class Monopoly {
             let rotateAction = SCNAction.rotate(by: CGFloat.pi * 2, around: SCNVector3(0, 0, 1), duration: 10.0)
             chest.node.runAction(SCNAction.repeatForever(rotateAction))
             chest.node.worldPosition = placeIcon.worldPosition
+        }
+        
+        if case .tax = action {
+            let placeIcon = node.childNode(withName: "place_icon", recursively: true)!
+            let coin = Coin()
+            mapNode.addChildNode(coin.node)
+            let rotateAction = SCNAction.rotate(by: CGFloat.pi * 2, around: SCNVector3(0, 0, 1), duration: 10.0)
+            coin.node.runAction(SCNAction.repeatForever(rotateAction))
+            coin.node.worldPosition = placeIcon.worldPosition
         }
         
         return ActionSpace(nodeName: name, node: node, action: action)
@@ -130,6 +140,14 @@ class Monopoly {
             let rotateAction = SCNAction.rotate(by: CGFloat.pi * 2, around: SCNVector3(0, 0, 1), duration: 10.0)
             lamp.node.runAction(SCNAction.repeatForever(rotateAction))
             lamp.node.worldPosition = placeIcon.worldPosition
+        }
+        
+        if case .owned_space_water_works = name {
+            let pipe = Pipe()
+            mapNode.addChildNode(pipe.node)
+            let rotateAction = SCNAction.rotate(by: CGFloat.pi * 2, around: SCNVector3(0, 0, 1), duration: 10.0)
+            pipe.node.runAction(SCNAction.repeatForever(rotateAction))
+            pipe.node.worldPosition = placeIcon.worldPosition
         }
         
         let space = ComunalSpace(ownershipPolicy: policy(name: name), node: node, nodeName: name)

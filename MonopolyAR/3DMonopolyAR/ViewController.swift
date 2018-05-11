@@ -10,7 +10,7 @@ import UIKit
 import SceneKit
 import ARKit
 
-final class ViewController: UIViewController, ARSCNViewDelegate, GameControllerDelegate {
+final class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate, GameControllerDelegate {
     
     func askBuyPermission(_ ownedSpace: OwnedSpaceProtocol, completion: @escaping (Bool) -> Void) {
         let alertController = UIAlertController(title: "Предлжение о покупке", message: "Купить эту клутку за \(ownedSpace.ownershipPolicy.price)", preferredStyle: .actionSheet)
@@ -85,6 +85,7 @@ final class ViewController: UIViewController, ARSCNViewDelegate, GameControllerD
         // Set the scene to the view
         sceneView.scene = scene
 
+
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
         sceneView.addGestureRecognizer(tapGesture)
 
@@ -112,8 +113,10 @@ final class ViewController: UIViewController, ARSCNViewDelegate, GameControllerD
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
         configuration.planeDetection = .horizontal
+        
         // Run the view's session
         sceneView.session.run(configuration)
+        sceneView.session.delegate = self
         state = .searchPlanes
     }
 
@@ -156,6 +159,10 @@ final class ViewController: UIViewController, ARSCNViewDelegate, GameControllerD
             }
             plane.removeFromParentNode()
         }
+    }
+    
+    func session(_ session: ARSession, didUpdate frame: ARFrame) {
+        gameController.updatePlayersObjects(with: frame.camera.eulerAngles)
     }
 
     func updateHintView() {

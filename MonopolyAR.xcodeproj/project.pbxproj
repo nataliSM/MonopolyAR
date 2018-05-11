@@ -15,6 +15,10 @@
 		0522C87820A501F000F5F7E9 /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522C87720A501F000F5F7E9 /* Train.swift */; };
 		0522C87A20A5043300F5F7E9 /* Translucent_Glass_Gold.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0522C87920A5043200F5F7E9 /* Translucent_Glass_Gold.jpg */; };
 		0522C87C20A5047000F5F7E9 /* Lamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522C87B20A5047000F5F7E9 /* Lamp.swift */; };
+		0522C87E20A5078600F5F7E9 /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522C87D20A5078600F5F7E9 /* Pipe.swift */; };
+		0522C88120A50ACD00F5F7E9 /* gold.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0522C87F20A50ACC00F5F7E9 /* gold.jpg */; };
+		0522C88220A50ACD00F5F7E9 /* coin-texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0522C88020A50ACC00F5F7E9 /* coin-texture.jpg */; };
+		0522C88420A50B6500F5F7E9 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522C88320A50B6500F5F7E9 /* Coin.swift */; };
 		055BE46B20A0EBE2006DE246 /* Monopoly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055BE46A20A0EBE2006DE246 /* Monopoly.swift */; };
 		055BE46F20A0EF4B006DE246 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055BE46E20A0EF4B006DE246 /* Space.swift */; };
 		055BE47320A0F240006DE246 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055BE47220A0F240006DE246 /* Player.swift */; };
@@ -73,6 +77,10 @@
 		0522C87720A501F000F5F7E9 /* Train.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
 		0522C87920A5043200F5F7E9 /* Translucent_Glass_Gold.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Translucent_Glass_Gold.jpg; sourceTree = "<group>"; };
 		0522C87B20A5047000F5F7E9 /* Lamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lamp.swift; sourceTree = "<group>"; };
+		0522C87D20A5078600F5F7E9 /* Pipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
+		0522C87F20A50ACC00F5F7E9 /* gold.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gold.jpg; sourceTree = "<group>"; };
+		0522C88020A50ACC00F5F7E9 /* coin-texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "coin-texture.jpg"; sourceTree = "<group>"; };
+		0522C88320A50B6500F5F7E9 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		055BE46A20A0EBE2006DE246 /* Monopoly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monopoly.swift; sourceTree = "<group>"; };
 		055BE46E20A0EF4B006DE246 /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
 		055BE47220A0F240006DE246 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -203,6 +211,8 @@
 				0522C87520A4FE7700F5F7E9 /* Question.swift */,
 				0522C87720A501F000F5F7E9 /* Train.swift */,
 				0522C87B20A5047000F5F7E9 /* Lamp.swift */,
+				0522C87D20A5078600F5F7E9 /* Pipe.swift */,
+				0522C88320A50B6500F5F7E9 /* Coin.swift */,
 			);
 			path = "common classes";
 			sourceTree = "<group>";
@@ -220,6 +230,8 @@
 				0522C87920A5043200F5F7E9 /* Translucent_Glass_Gold.jpg */,
 				E167D02D1FDC0615000919AE /* monopoly.scn */,
 				E16C7EE51FDFFBE000D278A9 /* Papa_Smurf_D.tga */,
+				0522C88020A50ACC00F5F7E9 /* coin-texture.jpg */,
+				0522C87F20A50ACC00F5F7E9 /* gold.jpg */,
 				E1E7975B1FDFDB65008A48D4 /* texture.png */,
 				E1E7975A1FDFDB55008A48D4 /* Doraemon.scn */,
 				E16C7EE41FDFFBC800D278A9 /* Papa_Smurf.scn */,
@@ -354,6 +366,7 @@
 				E16C7EE61FDFFC6300D278A9 /* Papa_Smurf.scn in Resources */,
 				E167D02E1FDC0615000919AE /* monopoly.scn in Resources */,
 				E1FB75D81FDFFAA20061BBD9 /* Doraemon.scn in Resources */,
+				0522C88220A50ACD00F5F7E9 /* coin-texture.jpg in Resources */,
 				E16C7EE71FDFFC6800D278A9 /* Papa_Smurf_D.tga in Resources */,
 				E11498D91FDC00AC00BDBC95 /* lepricon.scn in Resources */,
 				E167D02A1FDC051B000919AE /* snake-body-shadow.png in Resources */,
@@ -361,6 +374,7 @@
 				050D154220A038F7008D1E8B /* objects.scnassets in Resources */,
 				050D1525209FB17D008D1E8B /* blank-monopoly-board-template.jpg in Resources */,
 				E167D0381FDC1089000919AE /* Main.storyboard in Resources */,
+				0522C88120A50ACD00F5F7E9 /* gold.jpg in Resources */,
 				E167D0341FDC0F10000919AE /* mushroom-appear.scnp in Resources */,
 				E167D02C1FDC05D8000919AE /* monopoly_text.jpg in Resources */,
 				E167D03C1FDC10F3000919AE /* arscene.scn in Resources */,
@@ -397,6 +411,7 @@
 				0522C87C20A5047000F5F7E9 /* Lamp.swift in Sources */,
 				055BE47320A0F240006DE246 /* Player.swift in Sources */,
 				E160E46A1FDE98DC004481AF /* Position.swift in Sources */,
+				0522C87E20A5078600F5F7E9 /* Pipe.swift in Sources */,
 				E160E46C1FDE9998004481AF /* Map.swift in Sources */,
 				0522C87820A501F000F5F7E9 /* Train.swift in Sources */,
 				055BE47520A0F2D3006DE246 /* Card.swift in Sources */,
@@ -406,6 +421,7 @@
 				E167D0321FDC079C000919AE /* Lepricon.swift in Sources */,
 				E167D0301FDC074A000919AE /* GameController.swift in Sources */,
 				058EDD8820A390AF0064ACB4 /* PullUpController.swift in Sources */,
+				0522C88420A50B6500F5F7E9 /* Coin.swift in Sources */,
 				E1C1666E1FDBFE1A00F70B44 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

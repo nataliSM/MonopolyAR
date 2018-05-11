@@ -27,7 +27,7 @@ class ActionSpace: SpaceProtocol {
         case tax(price: Double)
         case communityChest
         case chance
-        case toJail
+        case toJail(jailSpace: SpaceProtocol)
         case start
         case none
     }
@@ -43,6 +43,8 @@ class ActionSpace: SpaceProtocol {
     func whenPlayerOnSpace(_ player: Player) {
         switch action {
         case .tax(let price): player.removeMoney(amount: price)
+        case .toJail(let jail): 
+            player.currentSpace = jail 
         default: return
         }
     }

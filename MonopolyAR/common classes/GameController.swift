@@ -21,7 +21,7 @@ final class GameController: MonopolyDelegate {
     init() {
         let monopolyScene = SCNScene(named: "monopoly.scn")!
         mapNode = monopolyScene.rootNode.childNode(withName: "monopoly_map", recursively: true)!
-        let scale = SCNVector3Make(0.06, 0.06, 0.06)
+        let scale = SCNVector3Make(0.05, 0.05, 0.05)
         let lepriconNode = Lepricon()
         lepriconNode.scale = scale
         mapNode.addChildNode(lepriconNode)
@@ -39,6 +39,12 @@ final class GameController: MonopolyDelegate {
         self.monopoly = Monopoly(players: [lepriconPlayer, smurfPlayer], mapNode: mapNode)
         monopoly.delegate = self
         startRotation()
+    }
+    
+    func updatePlayersObjects(with angle: vector_float3) {
+        monopoly.players.forEach({ (player) in
+            player.object.eulerAngles = SCNVector3(x: player.object.eulerAngles.x, y: player.object.eulerAngles.y, z: angle.y)
+        })
     }
     
     func startRotation() {
